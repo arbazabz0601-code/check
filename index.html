@@ -1,1348 +1,1316 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PROXYS Solar Pump | Parkash Gold Ind Pvt Ltd — Solar Water Pump Manufacturer, Noida</title>
-<meta name="description" content="PROXYS Solar Pump by Parkash Gold Ind Pvt Ltd, Noida — manufacturer of solar submersible pumps, solar controllers, submersible motors and PM-KUSUM approved agriculture pumping solutions across Uttar Pradesh.">
-<meta name="keywords" content="solar pump, solar submersible pump, PM KUSUM, Parkash Gold Ind Pvt Ltd, PROXYS, solar water pump manufacturer, agriculture solar pump, Noida">
-<meta property="og:title" content="PROXYS Solar Pump | Parkash Gold Ind Pvt Ltd">
-<meta property="og:description" content="Solar Water Pump Manufacturer — Trusted under the PM-KUSUM Scheme across Uttar Pradesh.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="hero-farmer-products.jpeg">
-<link rel="icon" type="image/png" href="logo.png">
-<link rel="canonical" href="https://proxyssolarpump.com/">
- 
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
- 
-<!-- Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<!-- AOS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
-<!-- Bootstrap grid utilities (layout only) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-<!-- Swiper -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
- 
-<!-- Schema: Local Business -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Manufacturer",
-  "name": "PROXYS Solar Pump — Parkash Gold Ind Pvt Ltd",
-  "image": "assets/img/hero-farmer-products.jpeg",
-  "description": "Manufacturer of solar water pumps, submersible pumps, solar controllers and agriculture pumping systems.",
-  "telephone": "+91-8882269894",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Noida",
-    "addressRegion": "Uttar Pradesh",
-    "addressCountry": "IN"
-  },
-  "sameAs": []
-}
-</script>
- 
-<style>
-/* ============================================================
-   PROXYS SOLAR PUMP — DESIGN TOKENS
-   Signature idea: everything structural takes its angle from a
-   solar panel's tilt (~9deg on a north-Indian rooftop). Section
-   dividers, card corners-on-hover, the loader, and the counter
-   ring all reference that single geometry instead of decorating
-   at random. Numbering (01/02..) is used only for the install
-   process, because that really is a fixed sequence.
-   ============================================================ */
-:root{
---green: #008035;
---green-dark: #006B2C;
---green-deep: #005522;
-  --black:#1A1A1A;
-  --black-soft:#242420;
-  --white:#FFFFFF;
-  --gray:#F7F7F7;
-  --gray-line:#E7E7E2;
-  --ink:#54544C;
-  --gold:#C9A227;
-  --tilt:9deg; /* the signature angle */
-  --display:'Montserrat', sans-serif;
-  --body:'Poppins', sans-serif;
-  --shadow-sm: 0 4px 18px rgba(26,26,26,.06);
-  --shadow-md: 0 14px 40px rgba(26,26,26,.10);
-  --shadow-lg: 0 26px 70px rgba(26,26,26,.16);
-  --radius: 18px;
-  --topbar-height: 40px;
-  --navbar-height: 0px;
-}
-*{box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{
-  margin:0; font-family:var(--body); color:var(--black); background:var(--white);
-  -webkit-font-smoothing:antialiased; overflow-x:hidden;
-  padding-top: calc(var(--topbar-height) + var(--navbar-height));
-}
-h1,h2,h3,h4,h5,.display{font-family:var(--display); font-weight:800; color:var(--black); letter-spacing:-.01em; margin:0;}
-p{line-height:1.75; color:var(--ink); margin:0;}
-a{text-decoration:none; color:inherit;}
-img{max-width:100%; display:block;}
-ul{list-style:none; margin:0; padding:0;}
-.container-xl{max-width:1320px; margin:0 auto; padding:0 24px;}
-.eyebrow{
-  display:inline-flex; align-items:center; gap:8px; font-family:var(--display); font-weight:700;
-  font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; color:var(--green-deep);
-  background:rgba(168,200,20,.12); padding:7px 16px 7px 10px; border-radius:100px; margin-bottom:18px;
-}
-.eyebrow i{color:var(--green-deep); font-size:.7rem;}
-.section{padding:110px 0;}
-.section-tight{padding:70px 0;}
-.grad-title{
-  background:linear-gradient(100deg,var(--black) 40%, var(--green-deep) 100%);
-  -webkit-background-clip:text; background-clip:text; color:transparent;
-}
-.btn-p{
-  display:inline-flex; align-items:center; gap:10px; font-family:var(--display); font-weight:700;
-  font-size:.92rem; letter-spacing:.02em; padding:16px 30px; border-radius:100px; border:2px solid transparent;
-  background:var(--green); color:var(--black); transition:.35s cubic-bezier(.2,.8,.2,1); cursor:pointer;
-  box-shadow:0 10px 26px rgba(168,200,20,.35);
-}
-.btn-p:hover{transform:translateY(-3px); box-shadow:0 16px 36px rgba(168,200,20,.45); color:var(--black);}
-.btn-outline{
-  display:inline-flex; align-items:center; gap:10px; font-family:var(--display); font-weight:700;
-  font-size:.92rem; padding:14px 28px; border-radius:100px; border:2px solid rgba(255,255,255,.5);
-  color:var(--white); transition:.35s;
-}
-.btn-outline:hover{background:var(--white); color:var(--black); border-color:var(--white);}
-.btn-dark{
-  display:inline-flex; align-items:center; gap:10px; font-family:var(--display); font-weight:700;
-  font-size:.9rem; padding:14px 26px; border-radius:100px; background:var(--black); color:var(--white); transition:.3s;
-}
-.btn-dark:hover{background:var(--green-deep); color:var(--white); transform:translateY(-2px);}
- 
-/* ---------- angled section divider (signature element) ---------- */
-.tilt-divider{position:relative; height:70px; margin-top:-70px; z-index:2; pointer-events:none;}
-.tilt-divider svg{width:100%; height:100%; display:block;}
-.tilt-divider.to-white path{fill:var(--white);}
-.tilt-divider.to-gray path{fill:var(--gray);}
-.tilt-divider.to-black path{fill:var(--black);}
- 
-/* ================= PRELOADER ================= */
-#preloader{
-  position:fixed; inset:0; background:var(--black); z-index:9999; display:flex; align-items:center; justify-content:center;
-  transition:opacity .6s ease, visibility .6s ease;
-}
-#preloader.hide{opacity:0; visibility:hidden;}
-.pl-panel{width:64px; height:40px; border:3px solid var(--green); border-radius:6px; transform:rotate(calc(var(--tilt) * -1)); position:relative; animation:pulse 1.4s ease-in-out infinite;}
-.pl-panel::before,.pl-panel::after{content:'';position:absolute; inset:6px; border:1px solid rgba(168,200,20,.5);}
-@keyframes pulse{0%,100%{opacity:.5; transform:rotate(calc(var(--tilt) * -1)) scale(.94);}50%{opacity:1; transform:rotate(calc(var(--tilt) * -1)) scale(1.04);}}
- 
-.topbar{background:var(--black); color:#cfcfcf; font-size:.82rem; padding:8px 0; position:fixed; top:0; left:0; right:0; width:100%; z-index:1200;}
-.topbar .container-xl{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px;}
-.topbar a{color:#cfcfcf; transition:.2s;}
-.topbar a:hover{color:var(--green);}
-.topbar .tb-item{display:inline-flex; align-items:center; gap:7px; margin-right:22px;}
-.topbar .tb-item i{color:var(--green);}
-.topbar .tb-social a{margin-left:14px; font-size:.9rem;}
- 
-/* ================= NAVBAR ================= */
-.navbar-proxys{
-  background:rgba(255,255,255,.92); backdrop-filter:blur(10px);
-  position:fixed; top:var(--topbar-height); left:0; right:0; width:100%; z-index:1100;
-  border-bottom:1px solid var(--gray-line); transition:.3s;
-}
-/* allow navbar to hide on scroll */
-.navbar-proxys{transition:transform .28s ease, box-shadow .28s ease;}
-.navbar-proxys.nav-hidden{transform:translateY(-110%);} 
-.navbar-proxys .container-xl{display:flex; align-items:center; justify-content:space-between; padding:14px 24px;}
-.brand img{height:72px;}
-.nav-links{display:flex; align-items:center; gap:34px;}
-.nav-links > li > a{
-  font-family:var(--display); font-weight:600; font-size:.94rem; color:var(--black); position:relative; padding:8px 0;
-  display:flex; align-items:center; gap:6px;
-}
-.nav-links > li > a::after{content:'';position:absolute; left:0; bottom:0; width:0; height:2px; background:var(--green); transition:.3s;}
-.nav-links > li:hover > a::after{width:100%;}
-.nav-links > li > a i{font-size:.68rem; color:var(--green-deep); transition:.3s;}
-.nav-links > li:hover > a i{transform:rotate(180deg);}
-.nav-cta{display:flex; align-items:center; gap:14px;}
-.icon-btn{width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:var(--gray); color:var(--black); font-size:1.05rem; transition:.3s;}
-.icon-btn:hover{background:var(--green); color:var(--black);}
-.burger{display:none; font-size:1.4rem; background:none; border:none; cursor:pointer;}
- 
-/* Mega menu */
-.has-mega{position:static;}
-.mega{
-  position:absolute; left:0; right:0; top:100%; background:var(--white); border-top:3px solid var(--green);
-  box-shadow:var(--shadow-lg); opacity:0; visibility:hidden; transform:translateY(-8px); transition:.3s;
-  padding:36px 0;
-}
-.has-mega:hover .mega{opacity:1; visibility:visible; transform:translateY(0);}
-.mega-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:0 32px;}
-.mega-col h5{font-family:var(--display); font-size:.78rem; letter-spacing:.1em; text-transform:uppercase; color:var(--green-deep); margin-bottom:16px;}
-.mega-col a{display:flex; align-items:center; gap:10px; padding:9px 0; color:var(--black); font-size:.92rem; font-weight:500; transition:.25s; border-bottom:1px solid transparent;}
-.mega-col a i{color:var(--green); width:18px; text-align:center;}
-.mega-col a:hover{color:var(--green-deep); transform:translateX(4px);}
-.mega-feature{background:var(--gray); border-radius:14px; overflow:hidden; position:relative;}
-.mega-feature img{height:100%; object-fit:cover; width:100%;}
-.mega-feature .mf-tag{position:absolute; top:14px; left:14px; background:var(--green); color:var(--black); font-family:var(--display); font-weight:700; font-size:.72rem; padding:5px 12px; border-radius:100px;}
- 
-/* Simple premium dropdown (Products) */
-.has-dropdown{position:relative;}
-.simple-dropdown{
-  position:absolute; left:0; top:100%; min-width:270px; background:var(--white); border-top:3px solid var(--green);
-  box-shadow:var(--shadow-lg); border-radius:0 0 14px 14px; opacity:0; visibility:hidden; transform:translateY(-8px);
-  transition:.3s; padding:10px 0; z-index:20;
-}
-.has-dropdown:hover .simple-dropdown{opacity:1; visibility:visible; transform:translateY(0);}
-.simple-dropdown a{display:flex; align-items:center; gap:10px; padding:12px 22px; color:var(--black); font-family:var(--display); font-weight:600; font-size:.86rem; transition:.25s;}
-.simple-dropdown a i{color:var(--green); width:16px; text-align:center; font-size:.8rem;}
-.simple-dropdown a:hover{background:var(--gray); color:var(--green-deep); padding-left:26px;}
- 
-/* ================= HERO ================= */
-.hero{
-  position:relative; min-height:96vh; display:flex; align-items:center; overflow:hidden;
-  background:radial-gradient(ellipse at 15% 20%, #24300a 0%, var(--black) 55%);
-  padding-top:60px;
-}
-.hero-bg-img{position:absolute; inset:0; z-index:0;}
-.hero-bg-img img{width:100%; height:100%; object-fit:cover; opacity:.9;}
-.hero-scrim{position:absolute; inset:0; z-index:1; background:linear-gradient(100deg, rgba(10,12,4,.94) 8%, rgba(10,12,4,.75) 42%, rgba(10,12,4,.15) 78%);}
-.hero-particles{position:absolute; inset:0; z-index:1; pointer-events:none;}
-.dot{position:absolute; width:5px; height:5px; background:var(--green); border-radius:50%; opacity:.5; animation:floatDot 9s ease-in-out infinite;}
-@keyframes floatDot{0%,100%{transform:translateY(0) translateX(0); opacity:.15;}50%{transform:translateY(-70px) translateX(18px); opacity:.7;}}
-.hero-content{position:relative; z-index:2; padding:70px 0;}
-.hero-tag{
-  display:inline-flex; align-items:center; gap:10px; background:rgba(168,200,20,.14); border:1px solid rgba(168,200,20,.4);
-  padding:9px 18px 9px 14px; border-radius:100px; margin-bottom:26px;
-}
-.hero-tag span{font-family:var(--display); font-weight:700; font-size:.78rem; letter-spacing:.1em; text-transform:uppercase; color:var(--green);}
-.hero h1{color:var(--white); font-size:clamp(2.4rem, 5vw, 4.1rem); line-height:1.06; max-width:760px;}
-.hero h1 em{font-style:normal; color:var(--green);}
-.hero p.lead{color:#d6d8cc; font-size:1.12rem; max-width:560px; margin-top:24px; font-weight:300;}
-.hero-btns{display:flex; gap:16px; margin-top:40px; flex-wrap:wrap;}
-.hero-mini-btn{display:inline-flex; align-items:center; gap:10px; color:var(--white); font-family:var(--display); font-weight:600; font-size:.9rem;}
-.hero-mini-btn .play-ring{width:52px; height:52px; border-radius:50%; border:1.5px solid rgba(255,255,255,.5); display:flex; align-items:center; justify-content:center; transition:.3s;}
-.hero-mini-btn:hover .play-ring{background:var(--green); border-color:var(--green); color:var(--black);}
-.hero-stats-strip{position:relative; z-index:2; display:flex; gap:0; margin-top:64px; flex-wrap:wrap; border-top:1px solid rgba(255,255,255,.15); padding-top:30px; max-width:760px;}
-.hero-stats-strip .hs{padding-right:44px; margin-right:44px; border-right:1px solid rgba(255,255,255,.15);}
-.hero-stats-strip .hs:last-child{border-right:none;}
-.hero-stats-strip b{display:block; font-family:var(--display); font-size:1.9rem; color:var(--green); font-weight:800;}
-.hero-stats-strip span{color:#b9bbae; font-size:.82rem;}
-.hero-float-panel{
-  position:absolute; right:6%; top:16%; z-index:2; width:230px; background:rgba(255,255,255,.08); backdrop-filter:blur(14px);
-  border:1px solid rgba(255,255,255,.18); border-radius:16px; padding:18px; transform:rotate(calc(var(--tilt) * -1));
-  animation:floaty 6s ease-in-out infinite;
-}
-@keyframes floaty{0%,100%{transform:rotate(calc(var(--tilt) * -1)) translateY(0);}50%{transform:rotate(calc(var(--tilt) * -1)) translateY(-16px);}}
-.hero-float-panel i{color:var(--green); font-size:1.4rem;}
-.hero-float-panel p{color:var(--white); font-size:.82rem; margin-top:8px; font-weight:500;}
- 
-/* ================= TRUST STRIP ================= */
-.trust-strip{background:var(--gray); padding:34px 0; border-bottom:1px solid var(--gray-line);}
-.trust-row{display:flex; justify-content:space-between; flex-wrap:wrap; gap:26px;}
-.trust-item{display:flex; align-items:center; gap:12px; font-family:var(--display); font-weight:700; font-size:.86rem; color:var(--black-soft);}
-.trust-item i{color:var(--green-deep); font-size:1.3rem;}
- 
-/* ================= ABOUT ================= */
-.about-media{position:relative;}
-.about-media img{border-radius:22px; box-shadow:var(--shadow-lg);}
-.about-badge{
-  position:absolute; bottom:-30px; left:-30px; background:var(--white); border-radius:18px; box-shadow:var(--shadow-md);
-  padding:22px 26px; display:flex; align-items:center; gap:16px;
-}
-.about-badge b{font-family:var(--display); font-size:2rem; color:var(--green-deep); display:block;}
-.about-badge span{font-size:.8rem; color:var(--ink);}
-.mission-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:34px;}
-.mission-card{background:var(--gray); border-radius:16px; padding:24px; border-left:3px solid var(--green);}
-.mission-card i{color:var(--green-deep); font-size:1.3rem; margin-bottom:10px;}
-.mission-card h4{font-size:1.05rem; margin-bottom:6px;}
-.mission-card p{font-size:.88rem;}
- 
-/* ================= WHY CHOOSE ================= */
-.why-card{
-  background:var(--white); border:1px solid var(--gray-line); border-radius:20px; padding:34px 28px; height:100%;
-  transition:.4s cubic-bezier(.2,.8,.2,1); position:relative; overflow:hidden;
-}
-.why-card:hover{transform:translateY(-8px); box-shadow:var(--shadow-lg); border-color:transparent;}
-.why-icon{
-  width:64px; height:64px; border-radius:16px; background:linear-gradient(135deg,var(--green),var(--green-deep));
-  display:flex; align-items:center; justify-content:center; margin-bottom:22px; transform:rotate(calc(var(--tilt) * -1));
-  transition:.4s;
-}
-.why-card:hover .why-icon{transform:rotate(0deg) scale(1.06);}
-.why-icon i{color:var(--white); font-size:1.5rem;}
-.why-card h4{font-size:1.12rem; margin-bottom:10px;}
-.why-card p{font-size:.9rem;}
- 
-/* ================= PRODUCTS ================= */
-.section-black{background:var(--black); color:var(--white);}
-.section-black .eyebrow{background:rgba(168,200,20,.18); color:var(--green);}
-.section-black p{color:#b9bbae;}
-.section-black h2{color:var(--white);}
-.prod-card{
-  background:var(--black-soft); border:1px solid rgba(255,255,255,.08); border-radius:20px; overflow:hidden; height:100%;
-  transition:.4s cubic-bezier(.2,.8,.2,1); position:relative;
-}
-.prod-card:hover{transform:translateY(-8px); border-color:rgba(168,200,20,.5); box-shadow:0 26px 60px rgba(0,0,0,.5);}
-.prod-media{height:210px; overflow:hidden; position:relative; background:linear-gradient(135deg,#222,#111);}
-.prod-media img{width:100%; height:100%; object-fit:cover; transition:.6s;}
-.prod-card:hover .prod-media img{transform:scale(1.08) rotate(1deg);}
-.prod-tag{position:absolute; top:14px; left:14px; background:var(--green); color:var(--black); font-family:var(--display); font-weight:700; font-size:.7rem; padding:5px 12px; border-radius:100px; z-index:2;}
-.prod-body{padding:24px 26px 28px;}
-.prod-body h4{color:var(--white); font-size:1.15rem; margin-bottom:8px;}
-.prod-body p{font-size:.86rem; margin-bottom:16px;}
-.prod-specs{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:18px;}
-.prod-specs span{font-size:.74rem; border:1px solid rgba(255,255,255,.15); padding:5px 11px; border-radius:100px; color:#c9cbbd;}
-.prod-link{display:inline-flex; align-items:center; gap:8px; color:var(--green); font-family:var(--display); font-weight:700; font-size:.86rem;}
-.prod-link i{transition:.3s;}
-.prod-card:hover .prod-link i{transform:translateX(5px);}
- 
-/* ================= PM KUSUM ================= */
-.kusum-wrap{
-  background: #e4e2e2;  /* ya koi bhi solid colour */
-  border-radius:32px; 
-  padding:0; 
-  overflow:hidden; 
-  position:relative;
-}
-.kusum-grid{display:grid; grid-template-columns:1.05fr .95fr; align-items:stretch;}
-.kusum-copy{padding:64px 60px; color:var(--black);}
-.kusum-copy .eyebrow{background:rgba(26,26,26,.12); color:var(--black);}
-.kusum-copy h2{color:var(--black); font-size:2.2rem;}
-.kusum-copy p{color:#2c2c22;}
-.kusum-pct{
-  display:inline-flex; align-items:baseline; gap:6px; background:var(--black); color:var(--green); border-radius:16px;
-  padding:18px 26px; margin:26px 0; font-family:var(--display);
-}
-.kusum-pct b{font-size:2.6rem; font-weight:900;}
-.kusum-pct small{font-size:.9rem; color:#d9dbc9;}
-.kusum-list li{display:flex; gap:12px; align-items:flex-start; margin-bottom:14px; color:#26260f; font-weight:500; font-size:.95rem;}
-.kusum-list i{color:var(--black); margin-top:4px;}
-.kusum-media{position:relative; min-height:340px;}
-.kusum-media img{width:100%; height:100%; object-fit:cover;}
-.kusum-media .km-overlay{position:absolute; inset:0; background:linear-gradient(0deg, rgba(0,0,0,.55), transparent 50%);}
-.kusum-media .km-cap{position:absolute; bottom:22px; left:22px; right:22px; color:var(--white); font-family:var(--display); font-weight:700; font-size:.92rem;}
- 
-/* ================= PROCESS ================= */
-.process-line{position:relative;}
-.process-step{position:relative; padding-left:78px; margin-bottom:44px;}
-.process-step:last-child{margin-bottom:0;}
-.process-num{
-  position:absolute; left:0; top:0; width:58px; height:58px; border-radius:16px; background:var(--gray);
-  border:2px solid var(--green); display:flex; align-items:center; justify-content:center; font-family:var(--display);
-  font-weight:800; color:var(--green-deep); font-size:1.15rem; transform:rotate(calc(var(--tilt) * -1));
-}
-.process-step:not(:last-child)::after{
-  content:''; position:absolute; left:29px; top:60px; width:2px; height:calc(100% + 20px); background:repeating-linear-gradient(0deg,var(--gray-line) 0 6px, transparent 6px 12px);
-}
-.process-step h4{font-size:1.15rem; margin-bottom:6px;}
-.process-step p{font-size:.92rem;}
- 
-/* ================= VIDEO ================= */
-.video-section{position:relative; border-radius:28px; overflow:hidden; box-shadow:var(--shadow-lg);}
-.video-section video{width:100%; display:block; max-height:560px; object-fit:cover; background:#000;}
-.video-caption{background:var(--black); color:#cfcfcf; padding:20px 28px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;}
-.video-caption b{color:var(--white); font-family:var(--display);}
- 
-/* ================= GALLERY ================= */
-.gallery-filters{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:36px;}
-.gfilter{
-  font-family:var(--display); font-weight:700; font-size:.82rem; padding:10px 20px; border-radius:100px; border:1.5px solid var(--gray-line);
-  background:var(--white); cursor:pointer; transition:.3s; color:var(--black-soft);
-}
-.gfilter.active,.gfilter:hover{background:var(--black); color:var(--white); border-color:var(--black);}
-.masonry{column-count:3; column-gap:18px;}
-.g-item{break-inside:avoid; margin-bottom:18px; border-radius:16px; overflow:hidden; position:relative; cursor:pointer; box-shadow:var(--shadow-sm);}
-.g-item img{width:100%; transition:.5s;}
-.g-item:hover img{transform:scale(1.06);}
-.g-overlay{
-  position:absolute; inset:0; background:linear-gradient(0deg, rgba(10,12,4,.86), transparent 55%);
-  opacity:0; transition:.35s; display:flex; align-items:flex-end; padding:18px;
-}
-.g-item:hover .g-overlay{opacity:1;}
-.g-overlay div b{color:var(--white); font-family:var(--display); font-size:.92rem; display:block;}
-.g-overlay div span{color:var(--green); font-size:.76rem; font-weight:600; letter-spacing:.05em; text-transform:uppercase;}
-.g-zoom{position:absolute; top:14px; right:14px; width:38px; height:38px; border-radius:50%; background:rgba(255,255,255,.9); display:flex; align-items:center; justify-content:center; opacity:0; transition:.3s;}
-.g-item:hover .g-zoom{opacity:1;}
- 
-/* lightbox */
-.lightbox{position:fixed; inset:0; background:rgba(10,10,8,.95); z-index:2000; display:none; align-items:center; justify-content:center; padding:30px;}
-.lightbox.open{display:flex;}
-.lightbox img{max-width:90vw; max-height:82vh; border-radius:10px; box-shadow:0 20px 80px rgba(0,0,0,.6);}
-.lightbox .lb-cap{position:absolute; bottom:36px; left:0; right:0; text-align:center; color:#cfcfcf; font-family:var(--display); font-size:.9rem;}
-.lb-close,.lb-next,.lb-prev{position:absolute; color:var(--white); background:rgba(255,255,255,.1); width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; transition:.25s; border:none; font-size:1.1rem;}
-.lb-close{top:26px; right:26px;}
-.lb-close:hover{background:var(--green); color:var(--black);}
-.lb-next{right:26px; top:50%; transform:translateY(-50%);}
-.lb-prev{left:26px; top:50%; transform:translateY(-50%);}
-.lb-next:hover,.lb-prev:hover{background:var(--green); color:var(--black);}
- 
-/* ================= COUNTER ================= */
-.counter-strip{background:var(--gray); border-radius:28px; padding:56px 40px;}
-.counter-item{text-align:center; position:relative;}
-.counter-ring{width:110px; height:110px; margin:0 auto 18px; position:relative;}
-.counter-ring svg{transform:rotate(-90deg);}
-.counter-ring circle{fill:none; stroke-width:6;}
-.counter-ring .bg{stroke:var(--gray-line);}
-.counter-ring .fg{stroke:var(--green); stroke-linecap:round; transition:stroke-dashoffset 1.6s cubic-bezier(.2,.8,.2,1);}
-.counter-ring .num{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:var(--display); font-weight:800; font-size:1.5rem; color:var(--black);}
-.counter-item span{font-family:var(--display); font-weight:600; font-size:.86rem; color:var(--ink); text-transform:uppercase; letter-spacing:.05em;}
- 
-/* ================= FAQ ================= */
-.faq-item{border-bottom:1px solid var(--gray-line); padding:24px 0;}
-.faq-q{display:flex; justify-content:space-between; align-items:center; cursor:pointer; font-family:var(--display); font-weight:700; font-size:1.02rem;}
-.faq-q i{color:var(--green-deep); transition:.3s;}
-.faq-item.open .faq-q i{transform:rotate(45deg);}
-.faq-a{max-height:0; overflow:hidden; transition:.35s ease; font-size:.92rem; padding-top:0;}
-.faq-item.open .faq-a{max-height:220px; padding-top:14px;}
- 
-/* ================= CTA ================= */
-.cta-band{
-  background:linear-gradient(120deg, var(--black) 0%, #2b3410 100%); border-radius:32px; padding:70px 60px; position:relative; overflow:hidden;
-}
-.cta-band::before{content:''; position:absolute; width:420px; height:420px; background:radial-gradient(circle, rgba(168,200,20,.25), transparent 70%); top:-160px; right:-120px;}
-.cta-band h2{color:var(--white); font-size:2.3rem; max-width:640px;}
-.cta-band p{color:#c9cbbd; margin-top:14px; max-width:520px;}
-.cta-btns{display:flex; gap:16px; margin-top:32px; flex-wrap:wrap;}
- 
-/* ================= FOOTER ================= */
-footer{background:var(--black); color:#b9bbae; padding-top:80px;}
-.footer-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr 1.2fr; gap:36px; padding-bottom:50px; border-bottom:1px solid rgba(255,255,255,.08);}
-.footer-grid h5{color:var(--white); font-family:var(--display); font-size:.92rem; letter-spacing:.06em; text-transform:uppercase; margin-bottom:20px;}
-.footer-grid li{margin-bottom:11px; font-size:.9rem;}
-.footer-grid a{color:#b9bbae; transition:.2s;}
-.footer-grid a:hover{color:var(--green); padding-left:4px;}
-.footer-brand img{height:80px; margin-bottom:18px;}
-.footer-brand p{font-size:.88rem; color:#9a9c8e;}
-.f-social{display:flex; gap:10px; margin-top:20px;}
-.f-social a{width:40px; height:40px; border-radius:50%; background:rgba(255,255,255,.06); display:flex; align-items:center; justify-content:center; transition:.25s;}
-.f-social a:hover{background:var(--green); color:var(--black);}
-.footer-bottom{display:flex; justify-content:space-between; align-items:center; padding:26px 0; font-size:.82rem; flex-wrap:wrap; gap:10px;}
-.footer-bottom a{color:#9a9c8e;}
-.footer-bottom a:hover{color:var(--green);}
- 
-/* ================= FLOATING ACTIONS ================= */
-.float-actions{position:fixed; right:26px; bottom:26px; z-index:900; display:flex; flex-direction:column; gap:14px;}
-.fa-btn{
-  width:58px; height:58px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.4rem;
-  box-shadow:var(--shadow-md); transition:.3s; position:relative;
-}
-.whatsapp-btn{background:#25D366; color:var(--white);} 
-.fa-call{background:var(--black); color:var(--green);}
-.fa-enquiry{background:var(--green); color:var(--black);}
-.fa-btn:hover{transform:scale(1.1);}
-.fa-btn .fa-label{
-  position:absolute; right:70px; top:50%; transform:translateY(-50%); background:var(--black); color:var(--white);
-  font-size:.78rem; font-family:var(--display); font-weight:600; padding:7px 14px; border-radius:8px; white-space:nowrap;
-  opacity:0; visibility:hidden; transition:.25s;
-}
-.fa-btn:hover .fa-label{opacity:1; visibility:visible;}
- 
-/* ================= STICKY MOBILE BAR ================= */
-.mobile-sticky{display:none;}
- 
-/* ================= ENQUIRY MODAL ================= */
-.enq-modal{position:fixed; inset:0; background:rgba(10,10,8,.7); z-index:2100; display:none; align-items:center; justify-content:center; padding:20px;}
-.enq-modal.open{display:flex;}
-.enq-box{background:var(--white); border-radius:22px; max-width:460px; width:100%; padding:40px; position:relative;}
-.enq-box h3{margin-bottom:6px;}
-.enq-box p{margin-bottom:22px; font-size:.9rem;}
-.enq-box input,.enq-box select,.enq-box textarea{
-  width:100%; padding:13px 16px; border-radius:10px; border:1.5px solid var(--gray-line); margin-bottom:14px; font-family:var(--body); font-size:.92rem;
-}
-.enq-box input:focus,.enq-box select:focus,.enq-box textarea:focus{outline:none; border-color:var(--green);}
-.enq-close{position:absolute; top:18px; right:18px; font-size:1.3rem; cursor:pointer; color:var(--ink);}
- 
-/* ================= UTILITIES ================= */
-.text-center{text-align:center;}
-.mx-auto{margin-left:auto; margin-right:auto;}
-.mb-16{margin-bottom:16px;} .mb-24{margin-bottom:24px;} .mb-40{margin-bottom:40px;} .mb-60{margin-bottom:60px;}
-.max-680{max-width:680px;}
-.reveal{animation:fadeUp .8s ease both;}
-@keyframes fadeUp{from{opacity:0; transform:translateY(24px);} to{opacity:1; transform:translateY(0);}}
-:focus-visible{outline:3px solid var(--green-deep); outline-offset:2px;}
-@media (prefers-reduced-motion: reduce){
-  *{animation:none !important; transition:none !important;}
-}
- 
-/* ================= RESPONSIVE ================= */
-@media (max-width:1199px){
-  .mega-grid{grid-template-columns:repeat(3,1fr);}
-  .kusum-grid{grid-template-columns:1fr;}
-  .footer-grid{grid-template-columns:1fr 1fr;}
-}
-@media (max-width:991px){
-  .nav-links,.nav-cta .icon-btn:first-child{display:none;}
-  .burger{display:block;}
-  .hero-float-panel{display:none;}
-  .masonry{column-count:2;}
-  .mission-grid{grid-template-columns:1fr;}
-  .counter-strip .row > div{margin-bottom:26px;}
-  /* Hide the header 'Request Quote' button on tablet/mobile so the burger has room */
-  .nav-cta .btn-p{display:none !important;}
-}
-@media (max-width:767px){
-  .section{padding:70px 0;}
-  .kusum-copy{padding:40px 26px;}
-  .cta-band{padding:46px 26px;}
-  .masonry{column-count:1;}
-  .footer-grid{grid-template-columns:1fr; text-align:left;}
-  .hero-stats-strip .hs{padding-right:24px; margin-right:24px;}
-  .mobile-sticky{
-    display:flex; position:fixed; bottom:0; left:0; right:0; z-index:950; background:var(--black);
-    box-shadow:0 -8px 30px rgba(0,0,0,.3);
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROXYS Solar Pump | Parkash Gold Ind Pvt Ltd — Solar Water Pump Manufacturer, Noida</title>
+  <meta name="description" content="PROXYS Solar Pump by Parkash Gold Ind Pvt Ltd, Noida — manufacturer of solar submersible pumps, solar controllers, submersible motors and PM-KUSUM approved agriculture pumping solutions across Uttar Pradesh.">
+  <meta name="keywords" content="solar pump, solar submersible pump, PM KUSUM, Parkash Gold Ind Pvt Ltd, PROXYS, solar water pump manufacturer, agriculture solar pump, Noida">
+  <meta property="og:title" content="PROXYS Solar Pump | Parkash Gold Ind Pvt Ltd">
+  <meta property="og:description" content="Solar Water Pump Manufacturer — Trusted under the PM-KUSUM Scheme across Uttar Pradesh.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="hero-farmer-products.jpeg">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="canonical" href="https://proxyssolarpump.com/">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+  <!-- Bootstrap grid utilities (layout only) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+  
+  <!-- Schema: Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Manufacturer",
+    "name": "PROXYS Solar Pump — Parkash Gold Ind Pvt Ltd",
+    "image": "assets/img/hero-farmer-products.jpeg",
+    "description": "Manufacturer of solar water pumps, submersible pumps, solar controllers and agriculture pumping systems.",
+    "telephone": "+91-8882269894",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Noida",
+      "addressRegion": "Uttar Pradesh",
+      "addressCountry": "IN"
+    },
+    "sameAs": []
   }
-  .mobile-sticky a{flex:1; text-align:center; padding:14px 6px; color:var(--white); font-family:var(--display); font-weight:700; font-size:.78rem; border-right:1px solid rgba(255,255,255,.1);}
-  .mobile-sticky a:last-child{border-right:none;}
-  .mobile-sticky a i{display:block; margin-bottom:4px; font-size:1.1rem; color:var(--green);}
-  .float-actions{bottom:78px;}
-  body{padding-bottom:64px;}
- 
-  /* ---- Header fix: topbar wraps to 2 lines on narrow phones and used to
-     collide with the fixed navbar below it. Simplify to a single-row,
-     icon-first topbar on mobile and re-anchor the navbar so nothing overlaps. */
-  .topbar{padding:7px 0;}
-  .topbar .container-xl{flex-wrap:nowrap; gap:10px;}
-  .topbar .tb-item{margin-right:0; white-space:nowrap; font-size:.72rem;}
-  .topbar .tb-item span.tb-text{display:none;}
-  .topbar .tb-item:first-child{flex:1; min-width:0;}
-  .topbar .tb-item:nth-child(2){display:none;}
-  .topbar > .container-xl > div:last-child{display:flex; align-items:center;}
-  .topbar > .container-xl > div:last-child .tb-item{display:none;}
-  .topbar .tb-social a{margin-left:12px;}
-  :root{ --topbar-height: 34px; }
-}
- 
-/* Prevent horizontal overflow on small screens (fixes right-side gap when zooming) */
-html, body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
- 
-/* Mobile off-canvas menu */
-.mobile-menu{position:fixed; top:0; right:-100%; width:82%; max-width:360px; height:100%; background:var(--white); z-index:1200; transition:.4s; box-shadow:-10px 0 40px rgba(0,0,0,.2); overflow-y:auto;}
-.mobile-menu.open{right:0;}
-.mobile-menu .mm-head{display:flex; justify-content:space-between; align-items:center; padding:20px 24px; border-bottom:1px solid var(--gray-line);}
-.mobile-menu ul{padding:10px 24px;}
-.mobile-menu li{border-bottom:1px solid var(--gray-line);}
-.mobile-menu details summary{padding:16px 0; font-family:var(--display); font-weight:600; cursor:pointer; display:flex; justify-content:space-between; align-items:center;}
-.mobile-menu details[open] summary i{transform:rotate(180deg);}
-.mobile-menu .sub-links{padding-bottom:14px;}
-.mobile-menu .sub-links a{display:block; padding:8px 0 8px 12px; font-size:.9rem; color:var(--ink);}
-.mm-overlay{position:fixed; inset:0; background:rgba(0,0,0,.5); z-index:1150; display:none;}
-.mm-overlay.open{display:block;}
-</style>
+  </script>
+  
+  <style>
+    /* ============================================================
+       PROXYS SOLAR PUMP — DESIGN TOKENS
+       ============================================================ */
+    :root{
+      --green: #008035;
+      --green-dark: #006B2C;
+      --green-deep: #005522;
+      --black:#1A1A1A;
+      --black-soft:#242420;
+      --white:#FFFFFF;
+      --gray:#F7F7F7;
+      --gray-line:#E7E7E2;
+      --ink:#54544C;
+      --gold:#C9A227;
+      --tilt:9deg;
+      --display:'Montserrat', sans-serif;
+      --body:'Poppins', sans-serif;
+      --shadow-sm: 0 4px 18px rgba(26,26,26,.06);
+      --shadow-md: 0 14px 40px rgba(26,26,26,.10);
+      --shadow-lg: 0 26px 70px rgba(26,26,26,.16);
+      --radius: 18px;
+      --topbar-height: 40px;
+      --navbar-height: 0px;
+    }
+    *{box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{
+      margin:0; font-family:var(--body); color:var(--black); background:var(--white);
+      -webkit-font-smoothing:antialiased; overflow-x:hidden;
+      padding-top: calc(var(--topbar-height) + var(--navbar-height));
+    }
+    h1,h2,h3,h4,h5,.display{font-family:var(--display); font-weight:800; color:var(--black); letter-spacing:-.01em; margin:0;}
+    p{line-height:1.75; color:var(--ink); margin:0;}
+    a{text-decoration:none; color:inherit;}
+    img{max-width:100%; display:block;}
+    ul{list-style:none; margin:0; padding:0;}
+    .container-xl{max-width:1320px; margin:0 auto; padding:0 24px;}
+    .eyebrow{
+      display:inline-flex; align-items:center; gap:8px; font-family:var(--display); font-weight:700;
+      font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; color:var(--green-deep);
+      background:rgba(168,200,20,.12); padding:7px 16px 7px 10px; border-radius:100px; margin-bottom:18px;
+    }
+    .eyebrow i{color:var(--green-deep); font-size:.7rem;}
+    .section{padding:110px 0;}
+    .section-tight{padding:70px 0;}
+    .grad-title{
+      background:linear-gradient(100deg,var(--black) 40%, var(--green-deep) 100%);
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+    }
+    .btn-p{
+      display:inline-flex; align-items:center; gap:10px; font-family:var(--display); font-weight:700;
+      font-size:.92rem; letter-spacing:.02em; padding:16px 30px; border-radius:100px; border:2px solid transparent;
+      background:var(--green); color:var(--black); transition:.35s cubic-bezier(.2,.8,.2,1); cursor:pointer;
+      box-shadow:0 10px 26px rgba(168,200,20,.35);
+    }
+    .btn-p:hover{transform:translateY(-3px); box-shadow:0 16px 36px rgba(168,200,20,.45); color:var(--black);}
+    .btn-outline{
+      display:inline-flex; align-items:center; gap:10px; font-family:var(--display); font-weight:700;
+      font-size:.92rem; padding:14px 28px; border-radius:100px; border:2px solid rgba(255,255,255,.5);
+      color:var(--white); transition:.35s;
+    }
+    .btn-outline:hover{background:var(--white); color:var(--black); border-color:var(--white);}
+    .btn-dark{
+      display:inline-flex; align-items:center; gap:10px; font-family:var(--display); font-weight:700;
+      font-size:.9rem; padding:14px 26px; border-radius:100px; background:var(--black); color:var(--white); transition:.3s;
+    }
+    .btn-dark:hover{background:var(--green-deep); color:var(--white); transform:translateY(-2px);}
+    
+    .tilt-divider{position:relative; height:70px; margin-top:-70px; z-index:2; pointer-events:none;}
+    .tilt-divider svg{width:100%; height:100%; display:block;}
+    .tilt-divider.to-white path{fill:var(--white);}
+    .tilt-divider.to-gray path{fill:var(--gray);}
+    .tilt-divider.to-black path{fill:var(--black);}
+    
+    /* PRELOADER */
+    #preloader{
+      position:fixed; inset:0; background:var(--black); z-index:9999; display:flex; align-items:center; justify-content:center;
+      transition:opacity .6s ease, visibility .6s ease;
+    }
+    #preloader.hide{opacity:0; visibility:hidden;}
+    .pl-panel{width:64px; height:40px; border:3px solid var(--green); border-radius:6px; transform:rotate(calc(var(--tilt) * -1)); position:relative; animation:pulse 1.4s ease-in-out infinite;}
+    .pl-panel::before,.pl-panel::after{content:'';position:absolute; inset:6px; border:1px solid rgba(168,200,20,.5);}
+    @keyframes pulse{0%,100%{opacity:.5; transform:rotate(calc(var(--tilt) * -1)) scale(.94);}50%{opacity:1; transform:rotate(calc(var(--tilt) * -1)) scale(1.04);}}
+    
+    /* TOPBAR */
+    .topbar{background:var(--black); color:#cfcfcf; font-size:.82rem; padding:8px 0; position:fixed; top:0; left:0; right:0; width:100%; z-index:1200;}
+    .topbar .container-xl{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px;}
+    .topbar a{color:#cfcfcf; transition:.2s;}
+    .topbar a:hover{color:var(--green);}
+    .topbar .tb-item{display:inline-flex; align-items:center; gap:7px; margin-right:22px;}
+    .topbar .tb-item i{color:var(--green);}
+    .topbar .tb-social a{margin-left:14px; font-size:.9rem;}
+    
+    /* NAVBAR */
+    .navbar-proxys{
+      background:rgba(255,255,255,.92); backdrop-filter:blur(10px);
+      position:fixed; top:var(--topbar-height); left:0; right:0; width:100%; z-index:1100;
+      border-bottom:1px solid var(--gray-line); transition:.3s;
+    }
+    .navbar-proxys{transition:transform .28s ease, box-shadow .28s ease;}
+    .navbar-proxys.nav-hidden{transform:translateY(-110%);} 
+    .navbar-proxys .container-xl{display:flex; align-items:center; justify-content:space-between; padding:14px 24px;}
+    .brand img{height:72px;}
+    .nav-links{display:flex; align-items:center; gap:34px;}
+    .nav-links > li > a{
+      font-family:var(--display); font-weight:600; font-size:.94rem; color:var(--black); position:relative; padding:8px 0;
+      display:flex; align-items:center; gap:6px;
+    }
+    .nav-links > li > a::after{content:'';position:absolute; left:0; bottom:0; width:0; height:2px; background:var(--green); transition:.3s;}
+    .nav-links > li:hover > a::after{width:100%;}
+    .nav-links > li > a i{font-size:.68rem; color:var(--green-deep); transition:.3s;}
+    .nav-links > li:hover > a i{transform:rotate(180deg);}
+    .nav-cta{display:flex; align-items:center; gap:14px;}
+    .icon-btn{width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:var(--gray); color:var(--black); font-size:1.05rem; transition:.3s;}
+    .icon-btn:hover{background:var(--green); color:var(--black);}
+    .burger{display:none; font-size:1.4rem; background:none; border:none; cursor:pointer;}
+    
+    /* Mega menu */
+    .has-mega{position:static;}
+    .mega{
+      position:absolute; left:0; right:0; top:100%; background:var(--white); border-top:3px solid var(--green);
+      box-shadow:var(--shadow-lg); opacity:0; visibility:hidden; transform:translateY(-8px); transition:.3s;
+      padding:36px 0;
+    }
+    .has-mega:hover .mega{opacity:1; visibility:visible; transform:translateY(0);}
+    .mega-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:0 32px;}
+    .mega-col h5{font-family:var(--display); font-size:.78rem; letter-spacing:.1em; text-transform:uppercase; color:var(--green-deep); margin-bottom:16px;}
+    .mega-col a{display:flex; align-items:center; gap:10px; padding:9px 0; color:var(--black); font-size:.92rem; font-weight:500; transition:.25s; border-bottom:1px solid transparent;}
+    .mega-col a i{color:var(--green); width:18px; text-align:center;}
+    .mega-col a:hover{color:var(--green-deep); transform:translateX(4px);}
+    .mega-feature{background:var(--gray); border-radius:14px; overflow:hidden; position:relative;}
+    .mega-feature img{height:100%; object-fit:cover; width:100%;}
+    .mega-feature .mf-tag{position:absolute; top:14px; left:14px; background:var(--green); color:var(--black); font-family:var(--display); font-weight:700; font-size:.72rem; padding:5px 12px; border-radius:100px;}
+    
+    /* Simple dropdown */
+    .has-dropdown{position:relative;}
+    .simple-dropdown{
+      position:absolute; left:0; top:100%; min-width:270px; background:var(--white); border-top:3px solid var(--green);
+      box-shadow:var(--shadow-lg); border-radius:0 0 14px 14px; opacity:0; visibility:hidden; transform:translateY(-8px);
+      transition:.3s; padding:10px 0; z-index:20;
+    }
+    .has-dropdown:hover .simple-dropdown{opacity:1; visibility:visible; transform:translateY(0);}
+    .simple-dropdown a{display:flex; align-items:center; gap:10px; padding:12px 22px; color:var(--black); font-family:var(--display); font-weight:600; font-size:.86rem; transition:.25s;}
+    .simple-dropdown a i{color:var(--green); width:16px; text-align:center; font-size:.8rem;}
+    .simple-dropdown a:hover{background:var(--gray); color:var(--green-deep); padding-left:26px;}
+    
+    /* HERO */
+    .hero{
+      position:relative; min-height:96vh; display:flex; align-items:center; overflow:hidden;
+      background:radial-gradient(ellipse at 15% 20%, #24300a 0%, var(--black) 55%);
+      padding-top:60px;
+    }
+    .hero-bg-img{position:absolute; inset:0; z-index:0;}
+    .hero-bg-img img{width:100%; height:100%; object-fit:cover; opacity:.9;}
+    .hero-scrim{position:absolute; inset:0; z-index:1; background:linear-gradient(100deg, rgba(10,12,4,.94) 8%, rgba(10,12,4,.75) 42%, rgba(10,12,4,.15) 78%);}
+    .hero-particles{position:absolute; inset:0; z-index:1; pointer-events:none;}
+    .dot{position:absolute; width:5px; height:5px; background:var(--green); border-radius:50%; opacity:.5; animation:floatDot 9s ease-in-out infinite;}
+    @keyframes floatDot{0%,100%{transform:translateY(0) translateX(0); opacity:.15;}50%{transform:translateY(-70px) translateX(18px); opacity:.7;}}
+    .hero-content{position:relative; z-index:2; padding:70px 0;}
+    .hero-tag{
+      display:inline-flex; align-items:center; gap:10px; background:rgba(168,200,20,.14); border:1px solid rgba(168,200,20,.4);
+      padding:9px 18px 9px 14px; border-radius:100px; margin-bottom:26px;
+    }
+    .hero-tag span{font-family:var(--display); font-weight:700; font-size:.78rem; letter-spacing:.1em; text-transform:uppercase; color:var(--green);}
+    .hero h1{color:var(--white); font-size:clamp(2.4rem, 5vw, 4.1rem); line-height:1.06; max-width:760px;}
+    .hero h1 em{font-style:normal; color:var(--green);}
+    .hero p.lead{color:#d6d8cc; font-size:1.12rem; max-width:560px; margin-top:24px; font-weight:300;}
+    .hero-btns{display:flex; gap:16px; margin-top:40px; flex-wrap:wrap;}
+    .hero-mini-btn{display:inline-flex; align-items:center; gap:10px; color:var(--white); font-family:var(--display); font-weight:600; font-size:.9rem;}
+    .hero-mini-btn .play-ring{width:52px; height:52px; border-radius:50%; border:1.5px solid rgba(255,255,255,.5); display:flex; align-items:center; justify-content:center; transition:.3s;}
+    .hero-mini-btn:hover .play-ring{background:var(--green); border-color:var(--green); color:var(--black);}
+    .hero-stats-strip{position:relative; z-index:2; display:flex; gap:0; margin-top:64px; flex-wrap:wrap; border-top:1px solid rgba(255,255,255,.15); padding-top:30px; max-width:760px;}
+    .hero-stats-strip .hs{padding-right:44px; margin-right:44px; border-right:1px solid rgba(255,255,255,.15);}
+    .hero-stats-strip .hs:last-child{border-right:none;}
+    .hero-stats-strip b{display:block; font-family:var(--display); font-size:1.9rem; color:var(--green); font-weight:800;}
+    .hero-stats-strip span{color:#b9bbae; font-size:.82rem;}
+    .hero-float-panel{
+      position:absolute; right:6%; top:16%; z-index:2; width:230px; background:rgba(255,255,255,.08); backdrop-filter:blur(14px);
+      border:1px solid rgba(255,255,255,.18); border-radius:16px; padding:18px; transform:rotate(calc(var(--tilt) * -1));
+      animation:floaty 6s ease-in-out infinite;
+    }
+    @keyframes floaty{0%,100%{transform:rotate(calc(var(--tilt) * -1)) translateY(0);}50%{transform:rotate(calc(var(--tilt) * -1)) translateY(-16px);}}
+    .hero-float-panel i{color:var(--green); font-size:1.4rem;}
+    .hero-float-panel p{color:var(--white); font-size:.82rem; margin-top:8px; font-weight:500;}
+    
+    /* TRUST STRIP */
+    .trust-strip{background:var(--gray); padding:34px 0; border-bottom:1px solid var(--gray-line);}
+    .trust-row{display:flex; justify-content:space-between; flex-wrap:wrap; gap:26px;}
+    .trust-item{display:flex; align-items:center; gap:12px; font-family:var(--display); font-weight:700; font-size:.86rem; color:var(--black-soft);}
+    .trust-item i{color:var(--green-deep); font-size:1.3rem;}
+    
+    /* ABOUT */
+    .about-media{position:relative;}
+    .about-media img{border-radius:22px; box-shadow:var(--shadow-lg);}
+    .about-badge{
+      position:absolute; bottom:-30px; left:-30px; background:var(--white); border-radius:18px; box-shadow:var(--shadow-md);
+      padding:22px 26px; display:flex; align-items:center; gap:16px;
+    }
+    .about-badge b{font-family:var(--display); font-size:2rem; color:var(--green-deep); display:block;}
+    .about-badge span{font-size:.8rem; color:var(--ink);}
+    .mission-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:34px;}
+    .mission-card{background:var(--gray); border-radius:16px; padding:24px; border-left:3px solid var(--green);}
+    .mission-card i{color:var(--green-deep); font-size:1.3rem; margin-bottom:10px;}
+    .mission-card h4{font-size:1.05rem; margin-bottom:6px;}
+    .mission-card p{font-size:.88rem;}
+    
+    /* WHY CHOOSE */
+    .why-card{
+      background:var(--white); border:1px solid var(--gray-line); border-radius:20px; padding:34px 28px; height:100%;
+      transition:.4s cubic-bezier(.2,.8,.2,1); position:relative; overflow:hidden;
+    }
+    .why-card:hover{transform:translateY(-8px); box-shadow:var(--shadow-lg); border-color:transparent;}
+    .why-icon{
+      width:64px; height:64px; border-radius:16px; background:linear-gradient(135deg,var(--green),var(--green-deep));
+      display:flex; align-items:center; justify-content:center; margin-bottom:22px; transform:rotate(calc(var(--tilt) * -1));
+      transition:.4s;
+    }
+    .why-card:hover .why-icon{transform:rotate(0deg) scale(1.06);}
+    .why-icon i{color:var(--white); font-size:1.5rem;}
+    .why-card h4{font-size:1.12rem; margin-bottom:10px;}
+    .why-card p{font-size:.9rem;}
+    
+    /* PRODUCTS */
+    .section-black{background:var(--black); color:var(--white);}
+    .section-black .eyebrow{background:rgba(168,200,20,.18); color:var(--green);}
+    .section-black p{color:#b9bbae;}
+    .section-black h2{color:var(--white);}
+    .prod-card{
+      background:var(--black-soft); border:1px solid rgba(255,255,255,.08); border-radius:20px; overflow:hidden; height:100%;
+      transition:.4s cubic-bezier(.2,.8,.2,1); position:relative;
+    }
+    .prod-card:hover{transform:translateY(-8px); border-color:rgba(168,200,20,.5); box-shadow:0 26px 60px rgba(0,0,0,.5);}
+    .prod-media{height:210px; overflow:hidden; position:relative; background:linear-gradient(135deg,#222,#111);}
+    .prod-media img{width:100%; height:100%; object-fit:cover; transition:.6s;}
+    .prod-card:hover .prod-media img{transform:scale(1.08) rotate(1deg);}
+    .prod-tag{position:absolute; top:14px; left:14px; background:var(--green); color:var(--black); font-family:var(--display); font-weight:700; font-size:.7rem; padding:5px 12px; border-radius:100px; z-index:2;}
+    .prod-body{padding:24px 26px 28px;}
+    .prod-body h4{color:var(--white); font-size:1.15rem; margin-bottom:8px;}
+    .prod-body p{font-size:.86rem; margin-bottom:16px;}
+    .prod-specs{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:18px;}
+    .prod-specs span{font-size:.74rem; border:1px solid rgba(255,255,255,.15); padding:5px 11px; border-radius:100px; color:#c9cbbd;}
+    .prod-link{display:inline-flex; align-items:center; gap:8px; color:var(--green); font-family:var(--display); font-weight:700; font-size:.86rem;}
+    .prod-link i{transition:.3s;}
+    .prod-card:hover .prod-link i{transform:translateX(5px);}
+    
+    /* PM KUSUM */
+    .kusum-wrap{
+      background: #e4e2e2;  /* ya koi bhi solid colour */
+      border-radius:32px; 
+      padding:0; 
+      overflow:hidden; 
+      position:relative;
+    }
+    .kusum-grid{display:grid; grid-template-columns:1.05fr .95fr; align-items:stretch;}
+    .kusum-copy{padding:64px 60px; color:var(--black);}
+    .kusum-copy .eyebrow{background:rgba(26,26,26,.12); color:var(--black);}
+    .kusum-copy h2{color:var(--black); font-size:2.2rem;}
+    .kusum-copy p{color:#2c2c22;}
+    .kusum-pct{
+      display:inline-flex; align-items:baseline; gap:6px; background:var(--black); color:var(--green); border-radius:16px;
+      padding:18px 26px; margin:26px 0; font-family:var(--display);
+    }
+    .kusum-pct b{font-size:2.6rem; font-weight:900;}
+    .kusum-pct small{font-size:.9rem; color:#d9dbc9;}
+    .kusum-list li{display:flex; gap:12px; align-items:flex-start; margin-bottom:14px; color:#26260f; font-weight:500; font-size:.95rem;}
+    .kusum-list i{color:var(--black); margin-top:4px;}
+    .kusum-media{position:relative; min-height:340px;}
+    .kusum-media img{width:100%; height:100%; object-fit:cover;}
+    .kusum-media .km-overlay{position:absolute; inset:0; background:linear-gradient(0deg, rgba(0,0,0,.55), transparent 50%);}
+    .kusum-media .km-cap{position:absolute; bottom:22px; left:22px; right:22px; color:var(--white); font-family:var(--display); font-weight:700; font-size:.92rem;}
+    
+    /* PROCESS */
+    .process-line{position:relative;}
+    .process-step{position:relative; padding-left:78px; margin-bottom:44px;}
+    .process-step:last-child{margin-bottom:0;}
+    .process-num{
+      position:absolute; left:0; top:0; width:58px; height:58px; border-radius:16px; background:var(--gray);
+      border:2px solid var(--green); display:flex; align-items:center; justify-content:center; font-family:var(--display);
+      font-weight:800; color:var(--green-deep); font-size:1.15rem; transform:rotate(calc(var(--tilt) * -1));
+    }
+    .process-step:not(:last-child)::after{
+      content:''; position:absolute; left:29px; top:60px; width:2px; height:calc(100% + 20px); background:repeating-linear-gradient(0deg,var(--gray-line) 0 6px, transparent 6px 12px);
+    }
+    .process-step h4{font-size:1.15rem; margin-bottom:6px;}
+    .process-step p{font-size:.92rem;}
+    
+    /* VIDEO */
+    .video-section{position:relative; border-radius:28px; overflow:hidden; box-shadow:var(--shadow-lg);}
+    .video-section video{width:100%; display:block; max-height:560px; object-fit:cover; background:#000;}
+    .video-caption{background:var(--black); color:#cfcfcf; padding:20px 28px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;}
+    .video-caption b{color:var(--white); font-family:var(--display);}
+    
+    /* GALLERY */
+    .gallery-filters{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:36px;}
+    .gfilter{
+      font-family:var(--display); font-weight:700; font-size:.82rem; padding:10px 20px; border-radius:100px; border:1.5px solid var(--gray-line);
+      background:var(--white); cursor:pointer; transition:.3s; color:var(--black-soft);
+    }
+    .gfilter.active,.gfilter:hover{background:var(--black); color:var(--white); border-color:var(--black);}
+    .masonry{column-count:3; column-gap:18px;}
+    .g-item{break-inside:avoid; margin-bottom:18px; border-radius:16px; overflow:hidden; position:relative; cursor:pointer; box-shadow:var(--shadow-sm);}
+    .g-item img{width:100%; transition:.5s;}
+    .g-item:hover img{transform:scale(1.06);}
+    .g-overlay{
+      position:absolute; inset:0; background:linear-gradient(0deg, rgba(10,12,4,.86), transparent 55%);
+      opacity:0; transition:.35s; display:flex; align-items:flex-end; padding:18px;
+    }
+    .g-item:hover .g-overlay{opacity:1;}
+    .g-overlay div b{color:var(--white); font-family:var(--display); font-size:.92rem; display:block;}
+    .g-overlay div span{color:var(--green); font-size:.76rem; font-weight:600; letter-spacing:.05em; text-transform:uppercase;}
+    .g-zoom{position:absolute; top:14px; right:14px; width:38px; height:38px; border-radius:50%; background:rgba(255,255,255,.9); display:flex; align-items:center; justify-content:center; opacity:0; transition:.3s;}
+    .g-item:hover .g-zoom{opacity:1;}
+    
+    /* lightbox */
+    .lightbox{position:fixed; inset:0; background:rgba(10,10,8,.95); z-index:2000; display:none; align-items:center; justify-content:center; padding:30px;}
+    .lightbox.open{display:flex;}
+    .lightbox img{max-width:90vw; max-height:82vh; border-radius:10px; box-shadow:0 20px 80px rgba(0,0,0,.6);}
+    .lightbox .lb-cap{position:absolute; bottom:36px; left:0; right:0; text-align:center; color:#cfcfcf; font-family:var(--display); font-size:.9rem;}
+    .lb-close,.lb-next,.lb-prev{position:absolute; color:var(--white); background:rgba(255,255,255,.1); width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; transition:.25s; border:none; font-size:1.1rem;}
+    .lb-close{top:26px; right:26px;}
+    .lb-close:hover{background:var(--green); color:var(--black);}
+    .lb-next{right:26px; top:50%; transform:translateY(-50%);}
+    .lb-prev{left:26px; top:50%; transform:translateY(-50%);}
+    .lb-next:hover,.lb-prev:hover{background:var(--green); color:var(--black);}
+    
+    /* COUNTER */
+    .counter-strip{background:var(--gray); border-radius:28px; padding:56px 40px;}
+    .counter-item{text-align:center; position:relative;}
+    .counter-ring{width:110px; height:110px; margin:0 auto 18px; position:relative;}
+    .counter-ring svg{transform:rotate(-90deg);}
+    .counter-ring circle{fill:none; stroke-width:6;}
+    .counter-ring .bg{stroke:var(--gray-line);}
+    .counter-ring .fg{stroke:var(--green); stroke-linecap:round; transition:stroke-dashoffset 1.6s cubic-bezier(.2,.8,.2,1);}
+    .counter-ring .num{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:var(--display); font-weight:800; font-size:1.5rem; color:var(--black);}
+    .counter-item span{font-family:var(--display); font-weight:600; font-size:.86rem; color:var(--ink); text-transform:uppercase; letter-spacing:.05em;}
+    
+    /* FAQ */
+    .faq-item{border-bottom:1px solid var(--gray-line); padding:24px 0;}
+    .faq-q{display:flex; justify-content:space-between; align-items:center; cursor:pointer; font-family:var(--display); font-weight:700; font-size:1.02rem;}
+    .faq-q i{color:var(--green-deep); transition:.3s;}
+    .faq-item.open .faq-q i{transform:rotate(45deg);}
+    .faq-a{max-height:0; overflow:hidden; transition:.35s ease; font-size:.92rem; padding-top:0;}
+    .faq-item.open .faq-a{max-height:220px; padding-top:14px;}
+    
+    /* QR SECTION */
+    .qr-section{background:var(--black); border-radius:32px; padding:70px 60px; position:relative; overflow:hidden;}
+    .qr-section::before{content:''; position:absolute; width:480px; height:480px; background:radial-gradient(circle, rgba(168,200,20,.15), transparent 70%); top:-140px; left:-160px;}
+    .qr-section h2{color:var(--white); font-size:clamp(1.8rem, 3vw, 2.6rem); letter-spacing:-.01em;}
+    .qr-section p{color:#d6d8cc; margin-top:12px; max-width:520px; font-size:1rem;}
+    .qr-features{list-style:none; margin:26px 0 0 0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:10px 24px;}
+    .qr-features li{display:flex; align-items:center; gap:12px; color:var(--white); font-weight:500; font-size:.95rem;}
+    .qr-features li i{color:var(--green); font-size:1.1rem;}
+    .qr-scan-box{display:flex; justify-content:center; align-items:center; position:relative;}
+    .qr-img-wrap{background:var(--white); padding:20px; border-radius:24px; box-shadow:0 0 40px rgba(0,0,0,.5);}
+    .qr-img-wrap img{width:100%; max-width:220px; height:auto; border-radius:12px; box-shadow:0 0 30px rgba(0, 128, 53, 0.6); transition:transform .3s ease;}
+    .qr-img-wrap img:hover{transform:scale(1.02);}
+    
+    /* FOOTER */
+    footer{background:var(--black); color:#b9bbae; padding-top:80px;}
+    .footer-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr 1.2fr; gap:36px; padding-bottom:50px; border-bottom:1px solid rgba(255,255,255,.08);}
+    .footer-grid h5{color:var(--white); font-family:var(--display); font-size:.92rem; letter-spacing:.06em; text-transform:uppercase; margin-bottom:20px;}
+    .footer-grid li{margin-bottom:11px; font-size:.9rem;}
+    .footer-grid a{color:#b9bbae; transition:.2s;}
+    .footer-grid a:hover{color:var(--green); padding-left:4px;}
+    .footer-brand img{height:80px; margin-bottom:18px;}
+    .footer-brand p{font-size:.88rem; color:#9a9c8e;}
+    .f-social{display:flex; gap:10px; margin-top:20px;}
+    .f-social a{width:40px; height:40px; border-radius:50%; background:rgba(255,255,255,.06); display:flex; align-items:center; justify-content:center; transition:.25s;}
+    .f-social a:hover{background:var(--green); color:var(--black);}
+    .footer-bottom{display:flex; justify-content:space-between; align-items:center; padding:26px 0; font-size:.82rem; flex-wrap:wrap; gap:10px;}
+    .footer-bottom a{color:#9a9c8e;}
+    .footer-bottom a:hover{color:var(--green);}
+    
+    /* FLOATING ACTIONS */
+    .float-actions{position:fixed; right:26px; bottom:26px; z-index:900; display:flex; flex-direction:column; gap:14px;}
+    .fa-btn{
+      width:58px; height:58px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.4rem;
+      box-shadow:var(--shadow-md); transition:.3s; position:relative;
+    }
+    .whatsapp-btn{background:#25D366; color:var(--white);} 
+    .fa-call{background:var(--black); color:var(--green);}
+    .fa-enquiry{background:var(--green); color:var(--black);}
+    .fa-btn:hover{transform:scale(1.1);}
+    .fa-btn .fa-label{
+      position:absolute; right:70px; top:50%; transform:translateY(-50%); background:var(--black); color:var(--white);
+      font-size:.78rem; font-family:var(--display); font-weight:600; padding:7px 14px; border-radius:8px; white-space:nowrap;
+      opacity:0; visibility:hidden; transition:.25s;
+    }
+    .fa-btn:hover .fa-label{opacity:1; visibility:visible;}
+    
+    /* MOBILE STICKY */
+    .mobile-sticky{display:none;}
+    
+    /* ENQUIRY MODAL */
+    .enq-modal{position:fixed; inset:0; background:rgba(10,10,8,.7); z-index:2100; display:none; align-items:center; justify-content:center; padding:20px;}
+    .enq-modal.open{display:flex;}
+    .enq-box{background:var(--white); border-radius:22px; max-width:460px; width:100%; padding:40px; position:relative;}
+    .enq-box h3{margin-bottom:6px;}
+    .enq-box p{margin-bottom:22px; font-size:.9rem;}
+    .enq-box input,.enq-box select,.enq-box textarea{
+      width:100%; padding:13px 16px; border-radius:10px; border:1.5px solid var(--gray-line); margin-bottom:14px; font-family:var(--body); font-size:.92rem;
+    }
+    .enq-box input:focus,.enq-box select:focus,.enq-box textarea:focus{outline:none; border-color:var(--green);}
+    .enq-close{position:absolute; top:18px; right:18px; font-size:1.3rem; cursor:pointer; color:var(--ink);}
+    
+    /* UTILITIES */
+    .text-center{text-align:center;}
+    .mx-auto{margin-left:auto; margin-right:auto;}
+    .mb-16{margin-bottom:16px;} .mb-24{margin-bottom:24px;} .mb-40{margin-bottom:40px;} .mb-60{margin-bottom:60px;}
+    .max-680{max-width:680px;}
+    .reveal{animation:fadeUp .8s ease both;}
+    @keyframes fadeUp{from{opacity:0; transform:translateY(24px);} to{opacity:1; transform:translateY(0);}}
+    :focus-visible{outline:3px solid var(--green-deep); outline-offset:2px;}
+    @media (prefers-reduced-motion: reduce){
+      *{animation:none !important; transition:none !important;}
+    }
+    
+    /* RESPONSIVE */
+    @media (max-width:1199px){
+      .mega-grid{grid-template-columns:repeat(3,1fr);}
+      .kusum-grid{grid-template-columns:1fr;}
+      .footer-grid{grid-template-columns:1fr 1fr;}
+    }
+    @media (max-width:991px){
+      .nav-links,.nav-cta .icon-btn:first-child{display:none;}
+      .burger{display:block;}
+      .hero-float-panel{display:none;}
+      .masonry{column-count:2;}
+      .mission-grid{grid-template-columns:1fr;}
+      .counter-strip .row > div{margin-bottom:26px;}
+      .nav-cta .btn-p{display:none !important;}
+    }
+    @media (max-width:767px){
+      .section{padding:70px 0;}
+      .kusum-copy{padding:40px 26px;}
+      .masonry{column-count:1;}
+      .footer-grid{grid-template-columns:1fr; text-align:left;}
+      .hero-stats-strip .hs{padding-right:24px; margin-right:24px;}
+      .mobile-sticky{
+        display:flex; position:fixed; bottom:0; left:0; right:0; z-index:950; background:var(--black);
+        box-shadow:0 -8px 30px rgba(0,0,0,.3);
+      }
+      .mobile-sticky a{flex:1; text-align:center; padding:14px 6px; color:var(--white); font-family:var(--display); font-weight:700; font-size:.78rem; border-right:1px solid rgba(255,255,255,.1);}
+      .mobile-sticky a:last-child{border-right:none;}
+      .mobile-sticky a i{display:block; margin-bottom:4px; font-size:1.1rem; color:var(--green);}
+      .float-actions{bottom:78px;}
+      body{padding-bottom:64px;}
+      .qr-section{padding:46px 26px; text-align:center;}
+      .qr-features{grid-template-columns:1fr; text-align:left;}
+      .qr-features li{justify-content:flex-start;}
+      .qr-scan-box{margin-top:34px;}
+      .topbar{padding:7px 0;}
+      .topbar .container-xl{flex-wrap:nowrap; gap:10px;}
+      .topbar .tb-item{margin-right:0; white-space:nowrap; font-size:.72rem;}
+      .topbar .tb-item span.tb-text{display:none;}
+      .topbar .tb-item:first-child{flex:1; min-width:0;}
+      .topbar .tb-item:nth-child(2){display:none;}
+      .topbar > .container-xl > div:last-child{display:flex; align-items:center;}
+      .topbar > .container-xl > div:last-child .tb-item{display:none;}
+      .topbar .tb-social a{margin-left:12px;}
+      :root{ --topbar-height: 34px; }
+    }
+    html, body { max-width: 100vw; overflow-x: hidden; }
+    
+    /* Mobile off-canvas menu */
+    .mobile-menu{position:fixed; top:0; right:-100%; width:82%; max-width:360px; height:100%; background:var(--white); z-index:1200; transition:.4s; box-shadow:-10px 0 40px rgba(0,0,0,.2); overflow-y:auto;}
+    .mobile-menu.open{right:0;}
+    .mobile-menu .mm-head{display:flex; justify-content:space-between; align-items:center; padding:20px 24px; border-bottom:1px solid var(--gray-line);}
+    .mobile-menu ul{padding:10px 24px;}
+    .mobile-menu li{border-bottom:1px solid var(--gray-line);}
+    .mobile-menu details summary{padding:16px 0; font-family:var(--display); font-weight:600; cursor:pointer; display:flex; justify-content:space-between; align-items:center;}
+    .mobile-menu details[open] summary i{transform:rotate(180deg);}
+    .mobile-menu .sub-links{padding-bottom:14px;}
+    .mobile-menu .sub-links a{display:block; padding:8px 0 8px 12px; font-size:.9rem; color:var(--ink);}
+    .mm-overlay{position:fixed; inset:0; background:rgba(0,0,0,.5); z-index:1150; display:none;}
+    .mm-overlay.open{display:block;}
+  </style>
 </head>
 <body>
  
-<!-- ================= PRELOADER ================= -->
-<div id="preloader"><div class="pl-panel"></div></div>
- 
-<!-- ================= TOPBAR ================= -->
-<div class="topbar">
-  <div class="container-xl">
-    <div>
-      <span class="tb-item"><i class="fa-solid fa-phone"></i> <span class="tb-text">Toll Free </span><a href="tel:8130355624">+91 8130355624</a></span>
-      <span class="tb-item"><i class="fa-solid fa-location-dot"></i> Noida, Uttar Pradesh</span>
-    </div>
-    <div style="display:flex; align-items:center;">
-      <span class="tb-item" style="margin-right:0;"><i class="fa-solid fa-envelope"></i> <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=anjul.gpt@gmail.com" target="_blank">info.proxyspumps@gmail.com</a></span>
-      <span class="tb-social">
-        <a href="https://www.facebook.com/people/Proxys-Solar-Pump/61591512869751/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/proxys_solar/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@prakashgoldindustries2446" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://www.linkedin.com/in/anjul-gupta-015b0663/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-      </span>
-    </div>
-  </div>
-</div>
- 
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar-proxys">
-  <div class="container-xl">
-    <a href="index.html" class="brand"><img src="logo.png" alt="PROXYS Solar Pump — Parkash Gold Ind Pvt Ltd logo"></a>
- 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="company.html">Company</a></li>
- 
-      <li class="has-dropdown">
-        <a href="index.html">Products <i class="fa-solid fa-chevron-down"></i></a>
-        <div class="simple-dropdown">
-          <a href="proxy-pump-controllers.html"><i class="fa-solid fa-microchip"></i> Proxy Pump Controllers</a>
-          <a href="solar-submersible-pumps.html"><i class="fa-solid fa-water"></i> Solar Submersible Pumps</a>
-          <a href="surface-pumps.html"><i class="fa-solid fa-arrows-up-down"></i> Surface Pumps</a>
-        </div>
-      </li>
- 
-      <li><a href="Untitled.pdf" target="_blank" rel="noopener">Catalogue</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
- 
-    <div class="nav-cta">
-      <a href="#" class="icon-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
-      <a href="contact.html" class="btn-p" style="color: white; padding:13px 24px; font-size:.85rem;">Request Quote</a>
-      <button class="burger" id="burgerBtn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
-    </div>
-  </div>
-</nav>
- 
-<!-- Mobile off-canvas -->
-<div class="mm-overlay" id="mmOverlay"></div>
-<div class="mobile-menu" id="mobileMenu">
-  <div class="mm-head">
-    <img src="logo.png" alt="PROXYS logo" style="height:32px;">
-    <i class="fa-solid fa-xmark" id="mmClose" style="font-size:1.3rem; cursor:pointer;"></i>
-  </div>
-  <ul>
-    <li><a href="index.html" style="display:block; padding:16px 0;">Home</a></li>
-    <li><a href="company.html" style="display:block; padding:16px 0;">Company</a></li>
-    <li>
-      <details>
-        <summary>Products <i class="fa-solid fa-chevron-down"></i></summary>
-        <div class="sub-links">
-          <a href="proxy-pump-controllers.html">Proxy Pump Controllers</a>
-          <a href="solar-submersible-pumps.html">Solar Submersible Pumps</a>
-          <a href="surface-pumps.html">Surface Pumps</a>
-        </div>
-      </details>
-    </li>
-    <li><a href="Untitled.pdf" target="_blank" rel="noopener" style="display:block; padding:16px 0;">Catalogue</a></li>
-    <li><a href="gallery.html" style="display:block; padding:16px 0;">Gallery</a></li>
-    <li><a href="contact.html" style="display:block; padding:16px 0;">Contact</a></li>
-  </ul>
-  <div style="padding:20px 24px;">
-    <a href="contact.html" class="btn-p" style="width:100%; justify-content:center;">Request Quote</a>
-  </div>
-</div>
- 
-<!-- ================= HERO ================= -->
-<header class="hero" id="home">
-  <div class="hero-bg-img"><img src="hero-farmer-products.jpeg" alt="Farmer with PROXYS solar submersible pump range in an irrigated field"></div>
-  <div class="hero-scrim"></div>
-  <div class="hero-particles" id="particles"></div>
- 
-  <div class="hero-float-panel">
-    <i class="fa-solid fa-bolt"></i>
-    <p>Runs on sunlight — zero electricity bill, zero diesel cost.</p>
-  </div>
- 
-  <div class="container-xl hero-content">
-    <div class="hero-tag"><span>●</span><span style="color: white;">PM-KUSUM Scheme Partner · Uttar Pradesh</span></div>
-    <h1>Power Your Fields <br>With <em style="color: #ffc107;">Pure Sunlight.</em></h1>
-    <p class="lead">PROXYS Solar Pump, manufactured by Parkash Gold Ind Pvt Ltd, Noida, builds solar submersible pumps, controllers and motors that bring reliable irrigation to farmers, homes and industries — under India's PM-KUSUM solar agriculture mission.</p>
- 
-    <div class="hero-btns">
-      <a href="gallery.html" class="btn-p"style="color: white;">Explore Products <i class="fa-solid fa-arrow-right"></i></a>
-      <a href="contact.html" class="btn-outline">Request a Quote</a>
-      <a href="#video" class="hero-mini-btn"><span class="play-ring"><i class="fa-solid fa-play"></i></span> Watch it in the field</a>
-    </div>
- 
-    <div class="hero-stats-strip">
-      <div class="hs"><b>60%</b><span>PM-KUSUM Subsidy Support</span></div>
-      <div class="hs"><b>0</b><span>Electricity Bill, Diesel Cost</span></div>
-      <div class="hs"><b>UP-Wide</b><span>Farmer Awareness Camps</span></div>
-      <div class="hs"><b>Made in India</b><span>Noida Manufacturing</span></div>
-    </div>
-  </div>
-</header>
- 
-<!-- ================= TRUST STRIP ================= -->
-<div class="trust-strip">
-  <div class="container-xl trust-row">
-    <div class="trust-item"><i class="fa-solid fa-landmark"></i> PM-KUSUM Scheme Camps</div>
-    <div class="trust-item"><i class="fa-solid fa-flag"></i> Made in India</div>
-    <div class="trust-item"><i class="fa-solid fa-industry"></i> Parkash Gold Ind Pvt Ltd, Noida</div>
-    <div class="trust-item"><i class="fa-solid fa-users"></i> Direct Farmer Engagement</div>
-    <div class="trust-item"><i class="fa-solid fa-solar-panel"></i> Solar-First Manufacturing</div>
-  </div>
-</div>
- 
-<!-- ================= ABOUT ================= -->
-<section class="section" id="about">
-  <div class="container-xl">
-    <div class="row align-items-center g-5">
-      <div class="col-lg-6" data-aos="fade-right">
-        <div class="about-media">
-          <img src="hero...jpeg" alt="PROXYS Solar Pump team at a government agricultural training camp in Bulandshahr, Uttar Pradesh">
-          <img src="event-04.jpeg" alt="PROXYS Solar Pump team at a farmer awareness camp in Mudiya Pamar, Uttar Pradesh">
-          <div class="about-badge">
-            <b>PGI</b>
-            <span>Parkash Gold<br>Ind Pvt Ltd</span>
-          </div>
-        </div>
+  <!-- PRELOADER -->
+  <div id="preloader"><div class="pl-panel"></div></div>
+  
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container-xl">
+      <div>
+        <span class="tb-item"><i class="fa-solid fa-phone"></i> <span class="tb-text">Toll Free </span><a href="tel:8130355624">+91 8130355624</a></span>
+        <span class="tb-item"><i class="fa-solid fa-location-dot"></i> Noida, Uttar Pradesh</span>
       </div>
-      <div class="col-lg-6" data-aos="fade-left">
-        <div class="eyebrow"><i class="fa-solid fa-circle"></i> Who We Are</div>
-        <h2 style="font-size:2.3rem; margin-bottom:20px;">A Noida-Based Manufacturer, <span class="grad-title">Out In The Fields With Farmers.</span></h2>
-        <p>PROXYS Solar Pump is the solar water pump brand of Parkash Gold Ind Pvt Ltd, based in Noida, Uttar Pradesh. Rather than selling only through dealers, our team runs direct outreach camps in villages and government agricultural centres — from Mudiya Pamar to the State Level Agricultural Training Centre in Bulandshahr — helping farmers understand and apply for the PM-KUSUM solar pump subsidy.</p>
-        <div class="mission-grid">
-          <div class="mission-card">
-            <i class="fa-solid fa-bullseye"></i>
-            <h4>Our Mission</h4>
-            <p>Bring dependable, solar-powered irrigation to every farmer, at a cost the PM-KUSUM subsidy makes affordable.</p>
-          </div>
-          <div class="mission-card">
-            <i class="fa-solid fa-eye"></i>
-            <h4>Our Vision</h4>
-            <p>A future where every field in Uttar Pradesh runs on sunlight, not diesel.</p>
-          </div>
-          <div class="mission-card">
-            <i class="fa-solid fa-people-group"></i>
-            <h4>On-Ground Approach</h4>
-            <p>Village-level camps, government training centres and farmer meetings — not just a showroom.</p>
-          </div>
-          <div class="mission-card">
-            <i class="fa-solid fa-industry"></i>
-            <h4>Manufacturing</h4>
-            <p>Designed and assembled by Parkash Gold Ind Pvt Ltd, Noida — submersible pumps, motors, controllers and panels.</p>
-          </div>
-        </div>
-        <a href="about.html" class="btn-dark" style="margin-top:32px;">More About Us <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-    </div>
-  </div>
-</section>
- 
-<!-- ================= WHY CHOOSE ================= -->
-<section class="section-tight" style="background:var(--gray);">
-  <div class="container-xl">
-    <div class="text-center max-680 mx-auto mb-60" data-aos="fade-up">
-      <div class="eyebrow"><i class="fa-solid fa-circle" style="color: white;"></i> Why PROXYS</div>
-      <h2 style="font-size:2.2rem;">Built for real Indian farms, <span class="grad-title">not a catalogue.</span></h2>
-    </div>
-    <div class="row g-4">
-      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="0">
-        <div class="why-card">
-          <div class="why-icon"><i class="fa-solid fa-sun"></i></div>
-          <h4>Solar-First Design</h4>
-          <p>Pumps engineered to run efficiently on solar panels alone — no grid electricity or diesel required.</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="why-card">
-          <div class="why-icon"><i class="fa-solid fa-landmark-flag"></i></div>
-          <h4>PM-KUSUM Guidance</h4>
-          <p>Our teams run camps at village and government levels to help farmers apply for the 60% subsidy.</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="why-card">
-          <div class="why-icon"><i class="fa-solid fa-industry"></i></div>
-          <h4>Made in Noida</h4>
-          <p>Manufactured by Parkash Gold Ind Pvt Ltd with stainless-steel submersible bodies built for borewell duty.</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="why-card">
-          <div class="why-icon"><i class="fa-solid fa-headset"></i></div>
-          <h4>On-Ground Support</h4>
-          <p>Toll-free helpline, site visits and after-sales support, not just a phone number on a website.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
- 
-<!-- ================= PRODUCTS ================= -->
-<section class="section section-black" id="products">
-  <div class="container-xl">
-    <div class="d-flex justify-content-between align-items-end flex-wrap mb-60" data-aos="fade-up">
-      <div class="max-680">
-        <div class="eyebrow"><i class="fa-solid fa-circle"style="color: white;"></i> Our Products</div>
-        <h2 style="font-size:2.2rem;">One range, every kind of pumping need.</h2>
-      </div>
-      <a href="gallery.html" class="btn-p" style="margin-top:20px; color: white;">View Full Catalogue <i class="fa-solid fa-arrow-right"></i></a>
-    </div>
- 
-    <div class="row g-4">
-      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="0">
-        <div class="prod-card">
-          <div class="prod-media"><span class="prod-tag"style="color: white;">Best Seller</span><img src="hero-farmer-products.jpeg" alt="Solar submersible pumps, PROXYS"></div>
-          <div class="prod-body">
-            <h4>Solar Submersible Pumps</h4>
-            <p>Stainless-steel bodied borewell pumps built for deep agricultural wells.</p>
-            <div class="prod-specs"><span>1 HP – 10 HP</span><span>Borewell Ready</span></div>
-            <a href="solar-submersible-pumps.html" class="prod-link">Specifications <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="prod-card">
-          <div class="prod-media"><span class="prod-tag"style="color: white;">V3 / V4 Series</span><img src="poster-pmkusum.jpeg" alt="Solar surface and monoblock pump series, PROXYS"></div>
-          <div class="prod-body">
-            <h4>Solar Surface &amp; Monoblock Pumps</h4>
-            <p>Openwell, surface and monoblock pumps for shallow-water and field-edge use.</p>
-            <div class="prod-specs"><span>0.5 – 7.5 HP</span><span>Openwell / Surface</span></div>
-            <a href="surface-pumps.html" class="prod-link">Specifications <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="prod-card">
-          <div class="prod-media"><span class="prod-tag"style="color: white;">Controllers</span><img src="hero-farmer-products.jpeg" alt="Proxy pump solar controller"></div>
-          <div class="prod-body">
-            <h4>Proxy Pump Controllers</h4>
-            <p>MPPT-based solar controllers that protect the motor and maximise panel output.</p>
-            <div class="prod-specs"><span>Digital Display</span><span>Dry-Run Protect</span></div>
-            <a href="proxy-pump-controllers.html" class="prod-link">Specifications <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="prod-card">
-          <div class="prod-media"><span class="prod-tag"style="color: white;">Panels</span><img src="event-08.jpeg" alt="Solar PV panel array installed for a PROXYS solar pump"></div>
-          <div class="prod-body">
-            <h4>Solar Panels &amp; Accessories</h4>
-            <p>PV panel arrays, mounting structures and cabling sized to match your pump load.</p>
-            <div class="prod-specs"><span>Mono-PERC</span><span>Custom Structures</span></div>
-            <a href="gallery.html" class="prod-link">Specifications <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
- 
-<!-- ================= PM KUSUM ================= -->
-<section class="section" style="padding-top:90px;">
-  <div class="container-xl">
-    <div class="kusum-wrap" data-aos="fade-up">
-      <div class="kusum-grid">
-        <div class="kusum-copy">
-          <div class="eyebrow"><i class="fa-solid fa-circle"></i> Government Scheme</div>
-          <h2>पहले आओ, पहले पाओ — PM-KUSUM Solar Pump Support</h2>
-          <div class="kusum-pct" style="color: white;"><b>60%</b><small>Subsidy for farmers<br>under PM-KUSUM</small></div>
-          <ul class="kusum-list">
-            <li><i class="fa-solid fa-check"></i> Central and state government subsidy on eligible solar pump sets.</li>
-            <li><i class="fa-solid fa-check"></i> Applications processed through the official UP Agriculture Department portal.</li>
-            <li><i class="fa-solid fa-check"></i> PROXYS teams run on-ground camps to guide farmers through documentation.</li>
-            <li><i class="fa-solid fa-check"></i> Scheme is time-limited — early applicants are prioritised.</li>
-          </ul>
-          <div style="display:flex; gap:14px; flex-wrap:wrap;">
-            <a href="services.html#kusum" class="btn-dark">Get Scheme Assistance <i class="fa-solid fa-arrow-right"></i></a>
-            <a href="https://agriculture.up.gov.in" target="_blank" rel="noopener" class="btn-outline" style="border-color:rgba(26,26,26,.35); color:var(--black);">Official Portal <i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
-        <div class="kusum-media">
-          <img src="smart.jpeg" alt="PM-KUSUM solar pump scheme awareness poster shown at PROXYS farmer camps">
-          <div class="km-overlay"></div>
-          <div class="km-cap">Official camp material used at UP farmer outreach events</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
- 
-<!-- ================= PROCESS ================= -->
-<section class="section-tight">
-  <div class="container-xl">
-    <div class="row g-5 align-items-start">
-      <div class="col-lg-5" data-aos="fade-right">
-        <div class="eyebrow"><i class="fa-solid fa-circle"></i> Our Process</div>
-        <h2 style="font-size:2.2rem; margin-bottom:20px;">From site visit to <span class="grad-title">running pump.</span></h2>
-        <p>A solar pump is only as good as its installation. Our process is built around getting the sizing, the subsidy paperwork and the fitting right the first time.</p>
-      </div>
-      <div class="col-lg-7" data-aos="fade-left">
-        <div class="process-line">
-          <div class="process-step">
-            <div class="process-num">01</div>
-            <h4>Site Survey &amp; Water Assessment</h4>
-            <p>We assess borewell depth, water yield and sunlight exposure to size the right pump and panel combination.</p>
-          </div>
-          <div class="process-step">
-            <div class="process-num">02</div>
-            <h4>PM-KUSUM Documentation</h4>
-            <p>Our team helps with the subsidy application on the government portal, so the paperwork isn't a barrier.</p>
-          </div>
-          <div class="process-step">
-            <div class="process-num">03</div>
-            <h4>Installation &amp; Commissioning</h4>
-            <p>Panels, pump, controller and piping are installed and tested on-site before handover.</p>
-          </div>
-          <div class="process-step">
-            <div class="process-num">04</div>
-            <h4>AMC &amp; After-Sales Support</h4>
-            <p>Ongoing maintenance, repair and a toll-free helpline keep the system running through the season.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
- 
-<!-- ================= VIDEO ================= -->
-<section class="section" id="video">
-  <div class="container-xl">
-    <div class="text-center max-680 mx-auto mb-60" data-aos="fade-up">
-      <div class="eyebrow"><i class="fa-solid fa-circle"></i> See It In The Field</div>
-      <h2 style="font-size:2.2rem;">Straight from our farmer camps.</h2>
-    </div>
-    <div class="video-section" data-aos="zoom-in">
-      <video controls poster="event-08.jpeg">
-        <source src="field-camp.mp4" type="video/mp4">
-        Your browser does not support embedded video.
-      </video>
-      <div class="video-caption">
-        <div><b>PM-KUSUM Farmer Camp</b> — State Level Agricultural Training Centre, Bulandshahr, UP</div>
-        <a href="gallery.html" class="prod-link" style="color:var(--green);">More Field Videos <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-    </div>
-  </div>
-</section>
- 
-<!-- ================= GALLERY ================= -->
-<section class="section-tight" style="background:var(--gray);" id="gallery">
-  <div class="container-xl">
-    <div class="text-center max-680 mx-auto mb-40" data-aos="fade-up">
-      <div class="eyebrow"><i class="fa-solid fa-circle"></i> Real Gallery</div>
-      <h2 style="font-size:2.2rem;">From the field, not a stock library.</h2>
-      <p class="mb-16" style="margin-top:14px;">Every photo below is from an actual PROXYS farmer camp or government exhibition.</p>
-    </div>
- 
-    <div class="gallery-filters" data-aos="fade-up">
-      <button class="gfilter active" data-filter="all">All</button>
-      <button class="gfilter" data-filter="camps">Farmer Camps</button>
-      <button class="gfilter" data-filter="govt">Government Events</button>
-      <button class="gfilter" data-filter="scheme">PM-KUSUM Material</button>
-    </div>
- 
-    <div class="masonry" id="masonryGrid" data-aos="fade-up">
-      <div class="g-item" data-cat="camps" data-full="assets/img/event-01.jpeg" data-cap="Farmer Awareness Camp — Mudiya Pamar, Uttar Pradesh">
-        <img src="event-01.jpeg" alt="PROXYS solar pump farmer awareness camp at Mudiya Pamar, Uttar Pradesh" loading="lazy">
-        <div class="g-overlay"><div><b>Mudiya Pamar, UP</b><span>Farmer Camp</span></div></div>
-        <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
-      </div>
-      <div class="g-item" data-cat="camps" data-full="assets/img/event-02.jpeg" data-cap="PROXYS mobile display van at Mudiya Pamar, Uttar Pradesh">
-        <img src="event-02.jpeg" alt="PROXYS solar pump mobile display van with farmers, Mudiya Pamar" loading="lazy">
-        <div class="g-overlay"><div><b>Mudiya Pamar, UP</b><span>Farmer Camp</span></div></div>
-        <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
-      </div>
-      <div class="g-item" data-cat="scheme" data-full="assets/img/poster-pmkusum.jpeg" data-cap="PM-KUSUM 60% subsidy awareness poster used at farmer camps">
-        <img src="poster-pmkusum.jpeg" alt="PM-KUSUM solar pump scheme 60 percent subsidy poster" loading="lazy">
-        <div class="g-overlay"><div><b>PM-KUSUM Poster</b><span>Scheme Material</span></div></div>
-        <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
-      </div>
-      <div class="g-item" data-cat="camps" data-full="assets/img/event-03.jpeg" data-cap="Rear view of the PROXYS solar pump display unit, Mudiya Pamar">
-        <img src="event-03.jpeg" alt="PROXYS solar pump display unit parked at village camp" loading="lazy">
-        <div class="g-overlay"><div><b>Mudiya Pamar, UP</b><span>Display Unit</span></div></div>
-        <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
-      </div>
-      <div class="g-item" data-cat="camps" data-full="assets/img/event-04.jpeg" data-cap="Farmer outreach camp — Chandari, Uttar Pradesh">
-        <img src="event-04.jpeg" alt="PROXYS solar pump farmer outreach camp at Chandari, Uttar Pradesh" loading="lazy">
-        <div class="g-overlay"><div><b>Chandari, UP</b><span>Farmer Camp</span></div></div>
-        <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
-      </div>
-      <div class="g-item" data-cat="govt" data-full="assets/img/event-05.jpeg" data-cap="State Level Agricultural Training Centre, Bulandshahr, Uttar Pradesh">
-        <img src="event-05.jpeg" alt="Solar panel setup at State Level Agricultural Training Centre, Bulandshahr" loading="lazy">
-        <div class="g-overlay"><div><b>Bulandshahr, UP</b><span>Govt. Training Centre</span></div></div>
-        <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
-      </div>
-      <div class="g-item" data-cat="govt" data-full="assets/img/event-06.jpeg" data-cap="Agricultural exhibition at the Government Training Centre, Bulandshahr">
-        <img src="event-06.jpeg" alt="Agricultural exhibition with tractor and stalls at Bulandshahr training centre" loading="lazy">
-        <div class="g-overlay"><div><b>Bulandshahr, UP</b><span>Exhibition</span></div></div>
-        <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
-      </div>
-      <div class="g-item" data-cat="govt" data-full="assets/img/event-07.jpeg" data-cap="Farmers gathered at the state agricultural training campus, Bulandshahr">
-        <img src="event-07.jpeg" alt="Farmers gathered at agricultural training campus entrance, Bulandshahr" loading="lazy">
-        <div class="g-overlay"><div><b>Bulandshahr, UP</b><span>Farmer Turnout</span></div></div>
-        <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
-      </div>
-      <div class="g-item" data-cat="govt" data-full="assets/img/event-08.jpeg" data-cap="Solar panel array demonstration at Bulandshahr training centre">
-        <img src="event-08.jpeg" alt="Solar panel array demonstration set up at farmer training event" loading="lazy">
-        <div class="g-overlay"><div><b>Bulandshahr, UP</b><span>Live Demo</span></div></div>
-        <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
-      </div>
-      <div class="g-item" data-cat="govt" data-full="assets/img/event-09.jpeg" data-cap="PROXYS team engaging with visiting farmers, Bulandshahr">
-        <img src="event-09.jpeg" alt="PROXYS team engaging with visiting farmers at government training gate" loading="lazy">
-        <div class="g-overlay"><div><b>Bulandshahr, UP</b><span>Farmer Interaction</span></div></div>
-        <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
-      </div>
-      <div class="g-item" data-cat="govt" data-full="assets/img/event-10.jpeg" data-cap="PROXYS information desk at the Bulandshahr training centre">
-        <img src="event-10.jpeg" alt="PROXYS information desk with banners at Bulandshahr training centre" loading="lazy">
-        <div class="g-overlay"><div><b>Bulandshahr, UP</b><span>Information Desk</span></div></div>
-        <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
-      </div>
-      <div class="g-item" data-cat="govt" data-full="assets/img/event-11.jpeg" data-cap="Farmers filling PM-KUSUM application forms, Bulandshahr">
-        <img src="event-11.jpeg" alt="Farmers filling out application forms at PROXYS camp desk" loading="lazy">
-        <div class="g-overlay"><div><b>Bulandshahr, UP</b><span>Application Support</span></div></div>
-        <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
-      </div>
-      <div class="g-item" data-cat="govt" data-full="assets/img/event-12.jpeg" data-cap="Logistics and equipment on-site, Bulandshahr training centre">
-        <img src="event-12.jpeg" alt="Logistics vehicle and equipment at Bulandshahr training centre camp" loading="lazy">
-        <div class="g-overlay"><div><b>Bulandshahr, UP</b><span>On-Site Setup</span></div></div>
-        <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
-      </div>
-    </div>
- 
-    <div class="text-center" style="margin-top:40px;">
-      <a href="gallery.html" class="btn-dark">View Complete Gallery <i class="fa-solid fa-arrow-right"></i></a>
-    </div>
-  </div>
-</section>
- 
-<!-- Lightbox -->
-<div class="lightbox" id="lightbox">
-  <button class="lb-close" id="lbClose"><i class="fa-solid fa-xmark"></i></button>
-  <button class="lb-prev" id="lbPrev"><i class="fa-solid fa-chevron-left"></i></button>
-  <img id="lbImg" src="" alt="">
-  <button class="lb-next" id="lbNext"><i class="fa-solid fa-chevron-right"></i></button>
-  <div class="lb-cap" id="lbCap"></div>
-</div>
- 
-<!-- ================= COUNTER ================= -->
-<section class="section-tight">
-  <div class="container-xl">
-    <div class="counter-strip" data-aos="fade-up">
-      <div class="row">
-        <div class="col-6 col-md-3 counter-item">
-          <div class="counter-ring">
-            <svg width="110" height="110"><circle class="bg" cx="55" cy="55" r="46"></circle><circle class="fg" cx="55" cy="55" r="46" data-target="60"></circle></svg>
-            <div class="num" data-count="60">0</div>
-          </div>
-          <span>% Subsidy Support</span>
-        </div>
-        <div class="col-6 col-md-3 counter-item">
-          <div class="counter-ring">
-            <svg width="110" height="110"><circle class="bg" cx="55" cy="55" r="46"></circle><circle class="fg" cx="55" cy="55" r="46" data-target="15"></circle></svg>
-            <div class="num" data-count="15">0</div>
-          </div>
-          <span>Districts Covered</span>
-        </div>
-        <div class="col-6 col-md-3 counter-item">
-          <div class="counter-ring">
-            <svg width="110" height="110"><circle class="bg" cx="55" cy="55" r="46"></circle><circle class="fg" cx="55" cy="55" r="46" data-target="40"></circle></svg>
-            <div class="num" data-count="40">0</div>
-          </div>
-          <span>Farmer Camps Held</span>
-        </div>
-        <div class="col-6 col-md-3 counter-item">
-          <div class="counter-ring">
-            <svg width="110" height="110"><circle class="bg" cx="55" cy="55" r="46"></circle><circle class="fg" cx="55" cy="55" r="46" data-target="7"></circle></svg>
-            <div class="num" data-count="7">0</div>
-          </div>
-          <span>Product Series</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
- 
-<!-- ================= FAQ ================= -->
-<section class="section-tight" style="background:var(--gray);">
-  <div class="container-xl">
-    <div class="row g-5">
-      <div class="col-lg-4" data-aos="fade-right">
-        <div class="eyebrow"><i class="fa-solid fa-circle"></i> FAQs</div>
-        <h2 style="font-size:2rem;">Common questions <span class="grad-title">from farmers.</span></h2>
-        <p style="margin-top:16px;">Still unsure? Our team is a call away on the toll-free helpline.</p>
-        <a href="contact.html" class="btn-dark" style="margin-top:24px;">Ask Us Directly <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-      <div class="col-lg-8" data-aos="fade-left">
-        <div class="faq-item open">
-          <div class="faq-q"><span>What is the PM-KUSUM subsidy on solar pumps?</span><i class="fa-solid fa-plus"></i></div>
-          <div class="faq-a"><p>PM-KUSUM is a central government scheme that supports farmers in installing solar-powered irrigation pumps with a subsidy, reducing the upfront cost of moving away from diesel or grid-dependent pumping.</p></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q"><span>How do I apply for the scheme?</span><i class="fa-solid fa-plus"></i></div>
-          <div class="faq-a"><p>Applications are submitted through the official Uttar Pradesh Agriculture Department portal. Our field teams assist farmers with documentation at our village and government-centre camps.</p></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q"><span>What pump capacities does PROXYS manufacture?</span><i class="fa-solid fa-plus"></i></div>
-          <div class="faq-a"><p>Our range spans from smaller domestic monoblock pumps to larger agricultural submersible pumps, along with matching solar panels and controllers.</p></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q"><span>Does PROXYS provide after-sales support?</span><i class="fa-solid fa-plus"></i></div>
-          <div class="faq-a"><p>Yes — maintenance, repair and Annual Maintenance Contracts (AMC) are available, along with a toll-free helpline for support requests.</p></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q"><span>Can I see a live installation before buying?</span><i class="fa-solid fa-plus"></i></div>
-          <div class="faq-a"><p>Yes, our team can arrange a site visit, and our farmer camps regularly demonstrate working solar pump setups in the field.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
- 
-<!-- ================= CTA ================= -->
-<section class="section-tight">
-  <div class="container-xl">
-    <div class="cta-band" data-aos="zoom-in">
-      <div class="row align-items-center">
-        <div class="col-lg-8">
-          <h2>Ready to move your field to solar?</h2>
-          <p>Talk to our team about pump sizing, the PM-KUSUM subsidy and installation timelines — no obligation.</p>
-        </div>
-        <div class="col-lg-4">
-          <div class="cta-btns">
-            <a href="contact.html" class="btn-p"style="color: white;">Request Quote</a>
-            <a href="tel:+918882269894" class="btn-outline">Call Now</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
- 
-<!-- ================= FOOTER ================= -->
-<footer>
-  <div class="container-xl">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="logo.png" alt="PROXYS Solar Pump logo">
-        <p>PROXYS Solar Pump is manufactured by Parkash Gold Ind Pvt Ltd, Noida — solar submersible pumps, controllers and motors for agriculture, domestic and industrial use.</p>
-        <div class="f-social">
+      <div style="display:flex; align-items:center;">
+        <span class="tb-item" style="margin-right:0;"><i class="fa-solid fa-envelope"></i> <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=anjul.gpt@gmail.com" target="_blank">info.proxyspumps@gmail.com</a></span>
+        <span class="tb-social">
           <a href="https://www.facebook.com/people/Proxys-Solar-Pump/61591512869751/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/proxys_solar/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://www.youtube.com/@prakashgoldindustries2446" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://wa.me/918882269894" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/in/anjul-gupta-015b0663/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- NAVBAR -->
+  <nav class="navbar-proxys">
+    <div class="container-xl">
+      <a href="index.html" class="brand"><img src="logo.png" alt="PROXYS Solar Pump — Parkash Gold Ind Pvt Ltd logo"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="company.html">Company</a></li>
+        <li class="has-dropdown">
+          <a href="index.html">Products <i class="fa-solid fa-chevron-down"></i></a>
+          <div class="simple-dropdown">
+            <a href="proxy-pump-controllers.html"><i class="fa-solid fa-microchip"></i> Proxy Pump Controllers</a>
+            <a href="solar-submersible-pumps.html"><i class="fa-solid fa-water"></i> Solar Submersible Pumps</a>
+            <a href="surface-pumps.html"><i class="fa-solid fa-arrows-up-down"></i> Surface Pumps</a>
+          </div>
+        </li>
+        <li><a href="Untitled.pdf" target="_blank" rel="noopener">Catalogue</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#" class="icon-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="contact.html" class="btn-p" style="color: white; padding:13px 24px; font-size:.85rem;">Request Quote</a>
+        <button class="burger" id="burgerBtn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Mobile off-canvas -->
+  <div class="mm-overlay" id="mmOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mm-head">
+      <img src="logo.png" alt="PROXYS logo" style="height:32px;">
+      <i class="fa-solid fa-xmark" id="mmClose" style="font-size:1.3rem; cursor:pointer;"></i>
+    </div>
+    <ul>
+      <li><a href="index.html" style="display:block; padding:16px 0;">Home</a></li>
+      <li><a href="company.html" style="display:block; padding:16px 0;">Company</a></li>
+      <li>
+        <details>
+          <summary>Products <i class="fa-solid fa-chevron-down"></i></summary>
+          <div class="sub-links">
+            <a href="proxy-pump-controllers.html">Proxy Pump Controllers</a>
+            <a href="solar-submersible-pumps.html">Solar Submersible Pumps</a>
+            <a href="surface-pumps.html">Surface Pumps</a>
+          </div>
+        </details>
+      </li>
+      <li><a href="Untitled.pdf" target="_blank" rel="noopener" style="display:block; padding:16px 0;">Catalogue</a></li>
+      <li><a href="gallery.html" style="display:block; padding:16px 0;">Gallery</a></li>
+      <li><a href="contact.html" style="display:block; padding:16px 0;">Contact</a></li>
+    </ul>
+    <div style="padding:20px 24px;">
+      <a href="contact.html" class="btn-p" style="width:100%; justify-content:center;">Request Quote</a>
+    </div>
+  </div>
+  
+  <!-- HERO -->
+  <header class="hero" id="home">
+    <div class="hero-bg-img"><img src="hero-farmer-products.jpeg" alt="Farmer with PROXYS solar submersible pump range in an irrigated field"></div>
+    <div class="hero-scrim"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-float-panel">
+      <i class="fa-solid fa-bolt"></i>
+      <p>Runs on sunlight — zero electricity bill, zero diesel cost.</p>
+    </div>
+    <div class="container-xl hero-content">
+      <div class="hero-tag"><span>●</span><span style="color: white;">PM-KUSUM Scheme Partner · Uttar Pradesh</span></div>
+      <h1>Power Your Fields <br>With <em style="color: #ffc107;">Pure Sunlight.</em></h1>
+      <p class="lead">PROXYS Solar Pump, manufactured by Parkash Gold Ind Pvt Ltd, Noida, builds solar submersible pumps, controllers and motors that bring reliable irrigation to farmers, homes and industries — under India's PM-KUSUM solar agriculture mission.</p>
+      <div class="hero-btns">
+        <a href="gallery.html" class="btn-p"style="color: white;">Explore Products <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="contact.html" class="btn-outline">Request a Quote</a>
+        <a href="#video" class="hero-mini-btn"><span class="play-ring"><i class="fa-solid fa-play"></i></span> Watch it in the field</a>
+      </div>
+      <div class="hero-stats-strip">
+        <div class="hs"><b></b><span>PM-KUSUM Subsidy Support</span></div>
+        <div class="hs"><b>0</b><span>Electricity Bill, Diesel Cost</span></div>
+        <div class="hs"><b>UP-Wide</b><span>Farmer Awareness Camps</span></div>
+        <div class="hs"><b>Made in India</b><span>Noida Manufacturing</span></div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- TRUST STRIP -->
+  <div class="trust-strip">
+    <div class="container-xl trust-row">
+      <div class="trust-item"><i class="fa-solid fa-landmark"></i> PM-KUSUM Scheme Camps</div>
+      <div class="trust-item"><i class="fa-solid fa-flag"></i> Made in India</div>
+      <div class="trust-item"><i class="fa-solid fa-industry"></i> Parkash Gold Ind Pvt Ltd, Noida</div>
+      <div class="trust-item"><i class="fa-solid fa-users"></i> Direct Farmer Engagement</div>
+      <div class="trust-item"><i class="fa-solid fa-solar-panel"></i> Solar-First Manufacturing</div>
+    </div>
+  </div>
+  
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container-xl">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="about-media">
+            <img src="comp.png" alt="PROXYS Solar Pump team at a farmer awareness camp in Mudiya Pamar, Uttar Pradesh">
+            <div class="about-badge">
+              <b>PGI</b>
+              <span>Parkash Gold<br>Ind Pvt Ltd</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="eyebrow"><i class="fa-solid fa-circle"></i> Who We Are</div>
+          <h2 style="font-size:2.3rem; margin-bottom:20px;">A Noida-Based Manufacturer, <span class="grad-title">Out In The Fields With Farmers.</span></h2>
+          <p>PROXYS Solar Pump is the solar water pump brand of Parkash Gold Ind Pvt Ltd, based in Noida, Uttar Pradesh. Rather than selling only through dealers, our team runs direct outreach camps in villages and government agricultural centres — from Mudiya Pamar to the State Level Agricultural Training Centre in Bulandshahr — helping farmers understand and apply for the PM-KUSUM solar pump subsidy.</p>
+          <div class="mission-grid">
+            <div class="mission-card">
+              <i class="fa-solid fa-bullseye"></i>
+              <h4>Our Mission</h4>
+              <p>Bring dependable, solar-powered irrigation to every farmer, at a cost the PM-KUSUM subsidy makes affordable.</p>
+            </div>
+            <div class="mission-card">
+              <i class="fa-solid fa-eye"></i>
+              <h4>Our Vision</h4>
+              <p>A future where every field in Uttar Pradesh runs on sunlight, not diesel.</p>
+            </div>
+            <div class="mission-card">
+              <i class="fa-solid fa-people-group"></i>
+              <h4>On-Ground Approach</h4>
+              <p>Village-level camps, government training centres and farmer meetings — not just a showroom.</p>
+            </div>
+            <div class="mission-card">
+              <i class="fa-solid fa-industry"></i>
+              <h4>Manufacturing</h4>
+              <p>Designed and assembled by Parkash Gold Ind Pvt Ltd, Noida — submersible pumps, motors, controllers and panels.</p>
+            </div>
+          </div>
+          <a href="company.html" class="btn-dark" style="margin-top:32px;">More About Us <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
-      <div>
-        <h5>Products</h5>
-        <ul>
-          <li><a href="proxy-pump-controllers.html">Proxy Pump Controllers</a></li>
-          <li><a href="solar-submersible-pumps.html">Solar Submersible Pumps</a></li>
-          <li><a href="surface-pumps.html">Surface Pumps</a></li>
-        </ul>
+    </div>
+  </section>
+  
+  <!-- WHY CHOOSE -->
+  <section class="section-tight" style="background:var(--gray);">
+    <div class="container-xl">
+      <div class="text-center max-680 mx-auto mb-60" data-aos="fade-up">
+        <div class="eyebrow"><i class="fa-solid fa-circle" style="color: white;"></i> Why PROXYS</div>
+        <h2 style="font-size:2.2rem;">Built for real Indian farms, <span class="grad-title">not a catalogue.</span></h2>
       </div>
-      <div>
-        <h5>Services</h5>
-        <ul>
-          <li><a href="index.html#installation">Installation</a></li>
-          <li><a href="index.html#kusuwrap">PM-KUSUM Consultancy</a></li>
-          <li><a href="index.html#amc">AMC</a></li>
-          <li><a href="index.html#repair">Repair</a></li>
-          <li><a href="index.html#support">After Sales Support</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>Quick Links</h5>
-        <ul>
-          <li><a href="company.html">Company</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="Untitled.pdf" target="_blank" rel="noopener">Catalogue</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>Contact</h5>
-        <ul>
-          <li><i class="fa-solid fa-phone" style="color:var(--green); margin-right:8px;"></i><a href="tel:18003093016"> +91 8130355624</a></li>
-          <li><i class="fa-solid fa-phone" style="color:var(--green); margin-right:8px;"></i><a href="tel:8882269894"> +91 8882269894</a></li>
-          <li><i class="fa-solid fa-phone" style="color:var(--green); margin-right:8px;"></i><a href="tel:9625267914"> +91 9625267914</a></li>
-          <li><i class="fa-solid fa-location-dot" style="color:var(--green); margin-right:8px;"></i> Parkash Gold Ind Pvt Ltd, Noida, Uttar Pradesh</li>
-          <li><i class="fa-solid fa-envelope" style="color:var(--green); margin-right:8px;"></i><a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=anjul.gpt@gmail.com" target="_blank">info.proxyspumps@gmail.com</a></li>
-        </ul>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="0">
+          <div class="why-card">
+            <div class="why-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+            <h4>PM KUSUM - B</h4>
+            <p>Solar Water Pumps for Farmers.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="why-card">
+            <div class="why-icon"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+            <h4>PM KUSUM - C</h4>
+            <p>Solarisation of Grid Connected Agricultural Pumps.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="why-card">
+            <div class="why-icon"><i class="fa-solid fa-droplet"></i></div>
+            <h4>JAL JEEVAN MISSION</h4>
+            <p>Safe Drinking Water for Every Household.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="why-card">
+            <div class="why-icon"><i class="fa-solid fa-headset"></i></div>
+            <h4>PM-KUSUM Guidance</h4>
+            <p>Our teams run camps at village and government levels to help farmers apply for the  subsidy.</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 PROXYS Solar Pump — Parkash Gold Ind Pvt Ltd. All rights reserved.</span>
-      <p style="margin-top: 6px; font-size: 13px; color: #8ea6ba;">
-        Designed &amp; Developed by
-        <a href="https://yourdigitalcrew.com/" style="color: #ffd700; text-decoration: none; font-weight: 600;" target="_blank" rel="noopener">Your Digital Crew</a>
-      </p>
+  </section>
+  
+  <!-- PRODUCTS (3 items) -->
+  <section class="section section-black" id="products">
+    <div class="container-xl">
+      <div class="d-flex justify-content-between align-items-end flex-wrap mb-60" data-aos="fade-up">
+        <div class="max-680">
+          <div class="eyebrow"><i class="fa-solid fa-circle"style="color: white;"></i> Our Products</div>
+          <h2 style="font-size:2.2rem;">One range, every kind of pumping need.</h2>
+        </div>
+        <a href="gallery.html" class="btn-p" style="margin-top:20px; color: white;">View Full Catalogue <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+  
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+          <div class="prod-card">
+            <div class="prod-media"><span class="prod-tag"style="color: white;">Best Seller</span><img src="submersible.jpeg" alt="Solar submersible pumps, PROXYS"></div>
+            <div class="prod-body">
+              <h4>Solar Submersible Pumps</h4>
+              <p>Stainless-steel bodied borewell pumps built for deep agricultural wells.</p>
+              <div class="prod-specs"><span>1 HP – 10 HP</span><span>Borewell Ready</span></div>
+              <a href="solar-submersible-pumps.html" class="prod-link">Specifications <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="prod-card">
+            <div class="prod-media"><span class="prod-tag"style="color: white;">V3 / V4 Series</span><img src="agriculture.jpeg" alt="Solar surface and monoblock pump series, PROXYS"></div>
+            <div class="prod-body">
+              <h4>Solar Surface &amp; Monoblock Pumps</h4>
+              <p>Openwell, surface and monoblock pumps for shallow-water and field-edge use.</p>
+              <div class="prod-specs"><span>0.5 – 7.5 HP</span><span>Openwell / Surface</span></div>
+              <a href="surface-pumps.html" class="prod-link">Specifications <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="prod-card">
+            <div class="prod-media"><span class="prod-tag"style="color: white;">Controllers</span><img src="controller.jpeg" alt="Proxy pump solar controller"></div>
+            <div class="prod-body">
+              <h4>Proxy Pump Controllers</h4>
+              <p>MPPT-based solar controllers that protect the motor and maximise panel output.</p>
+              <div class="prod-specs"><span>Digital Display</span><span>Dry-Run Protect</span></div>
+              <a href="proxy-pump-controllers.html" class="prod-link">Specifications <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- PM KUSUM -->
+  <section class="section" style="padding-top:90px;">
+    <div class="container-xl">
+      <div class="kusum-wrap" data-aos="fade-up">
+        <div class="kusum-grid">
+          <div class="kusum-copy">
+            <div class="eyebrow"><i class="fa-solid fa-circle"></i> Government Scheme</div>
+            <h2>पहले आओ, पहले पाओ — PM-KUSUM Solar Pump Support</h2>
+            <div class="kusum-pct" style="color: white;"><b></b>Subsidy for farmers<br>under PM-KUSUM</div>
+            <ul class="kusum-list">
+              <li><i class="fa-solid fa-check"></i> Central and state government subsidy on eligible solar pump sets.</li>
+              <li><i class="fa-solid fa-check"></i> Applications processed through the official UP Agriculture Department portal.</li>
+              <li><i class="fa-solid fa-check"></i> PROXYS teams run on-ground camps to guide farmers through documentation.</li>
+              <li><i class="fa-solid fa-check"></i> Scheme is time-limited — early applicants are prioritised.</li>
+            </ul>
+            <div style="display:flex; gap:14px; flex-wrap:wrap;">
+              <a href="services.html#kusum" class="btn-dark">Get Scheme Assistance <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="https://agriculture.up.gov.in" target="_blank" rel="noopener" class="btn-outline" style="border-color:rgba(26,26,26,.35); color:var(--black);">Official Portal <i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="kusum-media">
+            <img src="smart.jpeg" alt="PM-KUSUM solar pump scheme awareness poster shown at PROXYS farmer camps">
+            <div class="km-overlay"></div>
+            <div class="km-cap">Official camp material used at UP farmer outreach events</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- PROCESS -->
+  <section class="section-tight">
+    <div class="container-xl">
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="eyebrow"><i class="fa-solid fa-circle"></i> Our Process</div>
+          <h2 style="font-size:2.2rem; margin-bottom:20px;">From site visit to <span class="grad-title">running pump.</span></h2>
+          <p>A solar pump is only as good as its installation. Our process is built around getting the sizing, the subsidy paperwork and the fitting right the first time.</p>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="process-line">
+            <div class="process-step">
+              <div class="process-num">01</div>
+              <h4>Site Survey &amp; Water Assessment</h4>
+              <p>We assess borewell depth, water yield and sunlight exposure to size the right pump and panel combination.</p>
+            </div>
+            <div class="process-step">
+              <div class="process-num">02</div>
+              <h4>PM-KUSUM Documentation</h4>
+              <p>Our team helps with the subsidy application on the government portal, so the paperwork isn't a barrier.</p>
+            </div>
+            <div class="process-step">
+              <div class="process-num">03</div>
+              <h4>Installation &amp; Commissioning</h4>
+              <p>Panels, pump, controller and piping are installed and tested on-site before handover.</p>
+            </div>
+            <div class="process-step">
+              <div class="process-num">04</div>
+              <h4>AMC &amp; After-Sales Support</h4>
+              <p>Ongoing maintenance, repair and a toll-free helpline keep the system running through the season.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- VIDEO -->
+  <section class="section" id="video">
+    <div class="container-xl">
+      <div class="text-center max-680 mx-auto mb-60" data-aos="fade-up">
+        <div class="eyebrow"><i class="fa-solid fa-circle"></i> About Our Company</div>
+        <h2 style="font-size:2.2rem;">Powering Agriculture with Reliable Solar Solutions.</h2>
+      </div>
+      <div class="video-section" data-aos="zoom-in">
+        <video controls poster="fav.png">
+          <source src="company.mp4" type="video/mp4">
+          Your browser does not support embedded video.
+        </video>
+        <div class="video-caption">
+          <div><b>Proxys Solar</b> — A trusted solar solutions company delivering reliable and efficient solar systems for farmers, businesses, and agricultural applications.</div>
+          <a href="about.html" class="prod-link" style="color:var(--green);">Know More About Us <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- GALLERY -->
+  <section class="section-tight" style="background:var(--gray);" id="gallery">
+    <div class="container-xl">
+      <div class="text-center max-680 mx-auto mb-40" data-aos="fade-up">
+        <div class="eyebrow"><i class="fa-solid fa-circle"></i> Real Gallery</div>
+        <h2 style="font-size:2.2rem;">From the field, not a stock library.</h2>
+        <p class="mb-16" style="margin-top:14px;">Every photo below is from an actual PROXYS farmer camp or government exhibition.</p>
+      </div>
+      <div class="gallery-filters" data-aos="fade-up">
+        <button class="gfilter active" data-filter="all">All</button>
+        <button class="gfilter" data-filter="camps">Farmer Camps</button>
+        <button class="gfilter" data-filter="govt">Government Events</button>
+        <button class="gfilter" data-filter="scheme">PM-KUSUM Material</button>
+      </div>
+      <div class="masonry" id="masonryGrid" data-aos="fade-up">
+        <div class="g-item" data-cat="camps" data-full="event-01.jpeg" data-cap="Farmer Awareness Camp — Mudiya Pamar, Uttar Pradesh">
+          <img src="event-01.jpeg" alt="PROXYS solar pump farmer awareness camp at Mudiya Pamar, Uttar Pradesh" loading="lazy">
+          <div class="g-overlay"><div><b>Mudiya Pamar, UP</b><span>Farmer Camp</span></div></div>
+          <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="g-item" data-cat="camps" data-full="event-02.jpeg" data-cap="PROXYS mobile display van at Mudiya Pamar, Uttar Pradesh">
+          <img src="event-02.jpeg" alt="PROXYS solar pump mobile display van with farmers, Mudiya Pamar" loading="lazy">
+          <div class="g-overlay"><div><b>Mudiya Pamar, UP</b><span>Farmer Camp</span></div></div>
+          <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="g-item" data-cat="scheme" data-full="poster-pmkusum.jpeg" data-cap="PM-KUSUM  subsidy awareness poster used at farmer camps">
+          <img src="poster-pmkusum.jpeg" alt="PM-KUSUM solar pump scheme 60 percent subsidy poster" loading="lazy">
+          <div class="g-overlay"><div><b>PM-KUSUM Poster</b><span>Scheme Material</span></div></div>
+          <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="g-item" data-cat="camps" data-full="event-03.jpeg" data-cap="Rear view of the PROXYS solar pump display unit, Mudiya Pamar">
+          <img src="event-03.jpeg" alt="PROXYS solar pump display unit parked at village camp" loading="lazy">
+          <div class="g-overlay"><div><b>Mudiya Pamar, UP</b><span>Display Unit</span></div></div>
+          <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="g-item" data-cat="camps" data-full="event-04.jpeg" data-cap="Farmer outreach camp — Chandari, Uttar Pradesh">
+          <img src="event-04.jpeg" alt="PROXYS solar pump farmer outreach camp at Chandari, Uttar Pradesh" loading="lazy">
+          <div class="g-overlay"><div><b>Chandari, UP</b><span>Farmer Camp</span></div></div>
+          <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="g-item" data-cat="govt" data-full="event-05.jpeg" data-cap="State Level Agricultural Training Centre, Bulandshahr, Uttar Pradesh">
+          <img src="event-05.jpeg" alt="Solar panel setup at State Level Agricultural Training Centre, Bulandshahr" loading="lazy">
+          <div class="g-overlay"><div><b>Bulandshahr, UP</b><span>Govt. Training Centre</span></div></div>
+          <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="g-item" data-cat="govt" data-full="event-06.jpeg" data-cap="Agricultural exhibition at the Government Training Centre, Bulandshahr">
+          <img src="event-06.jpeg" alt="Agricultural exhibition with tractor and stalls at Bulandshahr training centre" loading="lazy">
+          <div class="g-overlay"><div><b>Bulandshahr, UP</b><span>Exhibition</span></div></div>
+          <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="g-item" data-cat="govt" data-full="event-07.jpeg" data-cap="Farmers gathered at the state agricultural training campus, Bulandshahr">
+          <img src="event-07.jpeg" alt="Farmers gathered at agricultural training campus entrance, Bulandshahr" loading="lazy">
+          <div class="g-overlay"><div><b>Bulandshahr, UP</b><span>Farmer Turnout</span></div></div>
+          <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="g-item" data-cat="govt" data-full="event-08.jpeg" data-cap="Solar panel array demonstration at Bulandshahr training centre">
+          <img src="event-08.jpeg" alt="Solar panel array demonstration set up at farmer training event" loading="lazy">
+          <div class="g-overlay"><div><b>Bulandshahr, UP</b><span>Live Demo</span></div></div>
+          <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="g-item" data-cat="govt" data-full="event-09.jpeg" data-cap="PROXYS team engaging with visiting farmers, Bulandshahr">
+          <img src="event-09.jpeg" alt="PROXYS team engaging with visiting farmers at government training gate" loading="lazy">
+          <div class="g-overlay"><div><b>Bulandshahr, UP</b><span>Farmer Interaction</span></div></div>
+          <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="g-item" data-cat="govt" data-full="event-10.jpeg" data-cap="PROXYS information desk at the Bulandshahr training centre">
+          <img src="event-10.jpeg" alt="PROXYS information desk with banners at Bulandshahr training centre" loading="lazy">
+          <div class="g-overlay"><div><b>Bulandshahr, UP</b><span>Information Desk</span></div></div>
+          <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="g-item" data-cat="govt" data-full="event-11.jpeg" data-cap="Farmers filling PM-KUSUM application forms, Bulandshahr">
+          <img src="event-11.jpeg" alt="Farmers filling out application forms at PROXYS camp desk" loading="lazy">
+          <div class="g-overlay"><div><b>Bulandshahr, UP</b><span>Application Support</span></div></div>
+          <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="g-item" data-cat="govt" data-full="event-12.jpeg" data-cap="Logistics and equipment on-site, Bulandshahr training centre">
+          <img src="event-12.jpeg" alt="Logistics vehicle and equipment at Bulandshahr training centre camp" loading="lazy">
+          <div class="g-overlay"><div><b>Bulandshahr, UP</b><span>On-Site Setup</span></div></div>
+          <div class="g-zoom"><i class="fa-solid fa-expand"></i></div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:40px;">
+        <a href="gallery.html" class="btn-dark">View Complete Gallery <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lbClose"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lb-prev" id="lbPrev"><i class="fa-solid fa-chevron-left"></i></button>
+    <img id="lbImg" src="" alt="">
+    <button class="lb-next" id="lbNext"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="lb-cap" id="lbCap"></div>
+  </div>
+  
+  <!-- COUNTER -->
+  <section class="section-tight">
+    <div class="container-xl">
+      <div class="counter-strip" data-aos="fade-up">
+        <div class="row">
+          <div class="col-6 col-md-3 counter-item">
+            <div class="counter-ring">
+              <svg width="110" height="110"><circle class="bg" cx="55" cy="55" r="46"></circle><circle class="fg" cx="55" cy="55" r="46" data-target="60"></circle></svg>
+              <div class="num" data-count="60">0</div>
+            </div>
+            <span>% Subsidy Support</span>
+          </div>
+          <div class="col-6 col-md-3 counter-item">
+            <div class="counter-ring">
+              <svg width="110" height="110"><circle class="bg" cx="55" cy="55" r="46"></circle><circle class="fg" cx="55" cy="55" r="46" data-target="15"></circle></svg>
+              <div class="num" data-count="15">0</div>
+            </div>
+            <span>Districts Covered</span>
+          </div>
+          <div class="col-6 col-md-3 counter-item">
+            <div class="counter-ring">
+              <svg width="110" height="110"><circle class="bg" cx="55" cy="55" r="46"></circle><circle class="fg" cx="55" cy="55" r="46" data-target="40"></circle></svg>
+              <div class="num" data-count="40">0</div>
+            </div>
+            <span>Farmer Camps Held</span>
+          </div>
+          <div class="col-6 col-md-3 counter-item">
+            <div class="counter-ring">
+              <svg width="110" height="110"><circle class="bg" cx="55" cy="55" r="46"></circle><circle class="fg" cx="55" cy="55" r="46" data-target="7"></circle></svg>
+              <div class="num" data-count="7">0</div>
+            </div>
+            <span>Product Series</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- FAQ -->
+  <section class="section-tight" style="background:var(--gray);">
+    <div class="container-xl">
+      <div class="row g-5">
+        <div class="col-lg-4" data-aos="fade-right">
+          <div class="eyebrow"><i class="fa-solid fa-circle"></i> FAQs</div>
+          <h2 style="font-size:2rem;">Common questions <span class="grad-title">from farmers.</span></h2>
+          <p style="margin-top:16px;">Still unsure? Our team is a call away on the toll-free helpline.</p>
+          <a href="contact.html" class="btn-dark" style="margin-top:24px;">Ask Us Directly <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="col-lg-8" data-aos="fade-left">
+          <div class="faq-item open">
+            <div class="faq-q"><span>What is the PM-KUSUM subsidy on solar pumps?</span><i class="fa-solid fa-plus"></i></div>
+            <div class="faq-a"><p>PM-KUSUM is a central government scheme that supports farmers in installing solar-powered irrigation pumps with a subsidy, reducing the upfront cost of moving away from diesel or grid-dependent pumping.</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q"><span>How do I apply for the scheme?</span><i class="fa-solid fa-plus"></i></div>
+            <div class="faq-a"><p>Applications are submitted through the official Uttar Pradesh Agriculture Department portal. Our field teams assist farmers with documentation at our village and government-centre camps.</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q"><span>What pump capacities does PROXYS manufacture?</span><i class="fa-solid fa-plus"></i></div>
+            <div class="faq-a"><p>Our range spans from smaller domestic monoblock pumps to larger agricultural submersible pumps, along with matching solar panels and controllers.</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q"><span>Does PROXYS provide after-sales support?</span><i class="fa-solid fa-plus"></i></div>
+            <div class="faq-a"><p>Yes — maintenance, repair and Annual Maintenance Contracts (AMC) are available, along with a toll-free helpline for support requests.</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q"><span>Can I see a live installation before buying?</span><i class="fa-solid fa-plus"></i></div>
+            <div class="faq-a"><p>Yes, our team can arrange a site visit, and our farmer camps regularly demonstrate working solar pump setups in the field.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- QR SECTION -->
+  <section class="section-tight">
+    <div class="container-xl">
+      <div class="qr-section" data-aos="zoom-in">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="eyebrow" style="background: rgba(168,200,20,.18); color: var(--green);"><i class="fa-solid fa-qrcode"></i> Scan & Explore</div>
+            <h2>Get Our Complete Product Catalogue Instantly</h2>
+            <p>Just point your phone camera at the QR code to view our full range of solar pumps, controllers, and accessories. No download required.</p>
+            <ul class="qr-features">
+              <li><i class="fa-solid fa-circle-check"></i> Full technical specifications</li>
+              <li><i class="fa-solid fa-circle-check"></i> Complete price lists</li>
+              <li><i class="fa-solid fa-circle-check"></i> PM-KUSUM subsidy details</li>
+              <li><i class="fa-solid fa-circle-check"></i> Installation guides</li>
+              <li><i class="fa-solid fa-circle-check"></i> Warranty information</li>
+              <li><i class="fa-solid fa-circle-check"></i> Dealership & order support</li>
+            </ul>
+          </div>
+          <div class="col-lg-5">
+            <div class="qr-scan-box">
+              <div class="qr-img-wrap">
+                <img src="scanner.jpeg" alt="Scan this QR code for the PROXYS Solar Pump digital catalogue">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- FOOTER -->
+  <footer>
+    <div class="container-xl">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="logo.png" alt="PROXYS Solar Pump logo">
+          <p>PROXYS Solar Pump is manufactured by Parkash Gold Ind Pvt Ltd, Noida — solar submersible pumps, controllers and motors for agriculture, domestic and industrial use.</p>
+          <div class="f-social">
+            <a href="https://www.facebook.com/people/Proxys-Solar-Pump/61591512869751/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/proxys_solar/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@prakashgoldindustries2446" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://wa.me/918882269894" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div>
+          <h5>Products</h5>
+          <ul>
+            <li><a href="proxy-pump-controllers.html">Proxy Pump Controllers</a></li>
+            <li><a href="solar-submersible-pumps.html">Solar Submersible Pumps</a></li>
+            <li><a href="surface-pumps.html">Surface Pumps</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Services</h5>
+          <ul>
+            <li><a href="index.html#installation">Installation</a></li>
+            <li><a href="index.html#kusuwrap">PM-KUSUM Consultancy</a></li>
+            <li><a href="index.html#amc">AMC</a></li>
+            <li><a href="index.html#repair">Repair</a></li>
+            <li><a href="index.html#support">After Sales Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="company.html">Company</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Untitled.pdf" target="_blank" rel="noopener">Catalogue</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <ul>
+            <li><i class="fa-solid fa-phone" style="color:var(--green); margin-right:8px;"></i><a href="tel:18003093016"> +91 8130355624</a></li>
+            <li><i class="fa-solid fa-phone" style="color:var(--green); margin-right:8px;"></i><a href="tel:8882269894"> +91 8882269894</a></li>
+            <li><i class="fa-solid fa-phone" style="color:var(--green); margin-right:8px;"></i><a href="tel:9625267914"> +91 9625267914</a></li>
+            <li><i class="fa-solid fa-location-dot" style="color:var(--green); margin-right:8px;"></i> Parkash Gold Ind Pvt Ltd, Noida, Uttar Pradesh</li>
+            <li><i class="fa-solid fa-envelope" style="color:var(--green); margin-right:8px;"></i><a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=anjul.gpt@gmail.com" target="_blank">info.proxyspumps@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 PROXYS Solar Pump — Parkash Gold Ind Pvt Ltd. All rights reserved.</span>
+        <p style="margin-top: 6px; font-size: 13px; color: #8ea6ba;">
+          Designed &amp; Developed by
+          <a href="https://yourdigitalcrew.com/" style="color: #ffd700; text-decoration: none; font-weight: 600;" target="_blank" rel="noopener">Your Digital Crew</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- FLOATING ACTIONS -->
+  <div class="float-actions">
+    <a href="https://wa.me/918882269894" target="_blank" class="fa-btn whatsapp-btn" aria-label="WhatsApp"><span class="fa-label">Chat on WhatsApp</span><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="tel:+918882269894" class="fa-btn fa-call" aria-label="Call"><span class="fa-label">Call Us Now</span><i class="fa-solid fa-phone"></i></a>
+    <button class="fa-btn fa-enquiry" id="openEnquiry" aria-label="Enquiry"><span class="fa-label">Quick Enquiry</span><i class="fa-solid fa-pen"></i></button>
+  </div>
+  
+  <!-- MOBILE STICKY BAR -->
+  <div class="mobile-sticky">
+    <a href="tel:+918882269894"><i class="fa-solid fa-phone"></i>Call</a>
+    <a href="https://wa.me/918882269894" target="_blank"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+    <a href="#" id="mobileEnquiry"><i class="fa-solid fa-pen"></i>Enquiry</a>
+  </div>
+  
+  <!-- ENQUIRY MODAL -->
+  <div class="enq-modal" id="enqModal">
+    <div class="enq-box">
+      <span class="enq-close" id="enqClose"><i class="fa-solid fa-xmark"></i></span>
+      <h3>Quick Enquiry</h3>
+      <p>Tell us what you need — our team will call you back.</p>
+      <form onsubmit="alert('Thank you! Our team will contact you shortly.'); this.reset(); document.getElementById('enqModal').classList.remove('open'); return false;">
+        <input type="text" placeholder="Full Name" required>
+        <input type="tel" placeholder="Mobile Number" required>
+        <select required>
+          <option value="" disabled selected>I'm interested in…</option>
+          <option>Agriculture Solar Pump</option>
+          <option>Domestic Pump</option>
+          <option>Industrial Pump</option>
+          <option>PM-KUSUM Scheme Assistance</option>
+          <option>Dealership Enquiry</option>
+        </select>
+        <textarea rows="3" placeholder="Your message (optional)"></textarea>
+        <button type="submit" class="btn-p" style="width:100%; justify-content:center;">Submit Enquiry</button>
+      </form>
     </div>
   </div>
-</footer>
- 
-<!-- ================= FLOATING ACTIONS ================= -->
-<div class="float-actions">
-  <a href="https://wa.me/918882269894" target="_blank" class="fa-btn whatsapp-btn" aria-label="WhatsApp"><span class="fa-label">Chat on WhatsApp</span><i class="fa-brands fa-whatsapp"></i></a>
-  <a href="tel:+918882269894" class="fa-btn fa-call" aria-label="Call"><span class="fa-label">Call Us Now</span><i class="fa-solid fa-phone"></i></a>
-  <button class="fa-btn fa-enquiry" id="openEnquiry" aria-label="Enquiry"><span class="fa-label">Quick Enquiry</span><i class="fa-solid fa-pen"></i></button>
-</div>
- 
-<!-- ================= MOBILE STICKY BAR ================= -->
-<div class="mobile-sticky">
-  <a href="tel:+918882269894"><i class="fa-solid fa-phone"></i>Call</a>
-  <a href="https://wa.me/918882269894" target="_blank"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
-  <a href="#" id="mobileEnquiry"><i class="fa-solid fa-pen"></i>Enquiry</a>
-</div>
- 
-<!-- ================= ENQUIRY MODAL ================= -->
-<div class="enq-modal" id="enqModal">
-  <div class="enq-box">
-    <span class="enq-close" id="enqClose"><i class="fa-solid fa-xmark"></i></span>
-    <h3>Quick Enquiry</h3>
-    <p>Tell us what you need — our team will call you back.</p>
-    <form onsubmit="alert('Thank you! Our team will contact you shortly.'); this.reset(); document.getElementById('enqModal').classList.remove('open'); return false;">
-      <input type="text" placeholder="Full Name" required>
-      <input type="tel" placeholder="Mobile Number" required>
-      <select required>
-        <option value="" disabled selected>I'm interested in…</option>
-        <option>Agriculture Solar Pump</option>
-        <option>Domestic Pump</option>
-        <option>Industrial Pump</option>
-        <option>PM-KUSUM Scheme Assistance</option>
-        <option>Dealership Enquiry</option>
-      </select>
-      <textarea rows="3" placeholder="Your message (optional)"></textarea>
-      <button type="submit" class="btn-p" style="width:100%; justify-content:center;">Submit Enquiry</button>
-    </form>
-  </div>
-</div>
- 
-<!-- ================= SCRIPTS ================= -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
-<script>
-/* Preloader */
-window.addEventListener('load', () => {
-  document.getElementById('preloader').classList.add('hide');
-});
- 
-/* AOS init */
-AOS.init({ duration: 800, once: true, offset: 60 });
- 
-/* Ambient particles in hero */
-(function(){
-  const wrap = document.getElementById('particles');
-  for(let i=0;i<24;i++){
-    const d = document.createElement('div');
-    d.className='dot';
-    d.style.left = Math.random()*100+'%';
-    d.style.top = Math.random()*100+'%';
-    d.style.animationDelay = (Math.random()*9)+'s';
-    d.style.animationDuration = (7+Math.random()*6)+'s';
-    wrap.appendChild(d);
-  }
-})();
- 
-/* Mobile off-canvas menu */
-const burgerBtn = document.getElementById('burgerBtn');
-const mobileMenu = document.getElementById('mobileMenu');
-const mmOverlay = document.getElementById('mmOverlay');
-const mmClose = document.getElementById('mmClose');
-function openMM(){ mobileMenu.classList.add('open'); mmOverlay.classList.add('open'); }
-function closeMM(){ mobileMenu.classList.remove('open'); mmOverlay.classList.remove('open'); }
-burgerBtn.addEventListener('click', openMM);
-mmClose.addEventListener('click', closeMM);
-mmOverlay.addEventListener('click', closeMM);
- 
-/* Enquiry modal */
-const enqModal = document.getElementById('enqModal');
-document.getElementById('openEnquiry').addEventListener('click', ()=> enqModal.classList.add('open'));
-document.getElementById('mobileEnquiry').addEventListener('click', (e)=>{ e.preventDefault(); enqModal.classList.add('open'); });
-document.getElementById('enqClose').addEventListener('click', ()=> enqModal.classList.remove('open'));
-enqModal.addEventListener('click', (e)=>{ if(e.target===enqModal) enqModal.classList.remove('open'); });
- 
-/* FAQ accordion */
-document.querySelectorAll('.faq-q').forEach(q=>{
-  q.addEventListener('click', ()=>{
-    const item = q.parentElement;
-    const wasOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
-    if(!wasOpen) item.classList.add('open');
-  });
-});
- 
-/* Gallery filter */
-const gItems = document.querySelectorAll('.g-item');
-document.querySelectorAll('.gfilter').forEach(btn=>{
-  btn.addEventListener('click', ()=>{
-    document.querySelectorAll('.gfilter').forEach(b=>b.classList.remove('active'));
-    btn.classList.add('active');
-    const f = btn.dataset.filter;
-    gItems.forEach(item=>{
-      item.style.display = (f==='all' || item.dataset.cat===f) ? '' : 'none';
+  
+  <!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+  <script>
+    /* Preloader */
+    window.addEventListener('load', () => {
+      document.getElementById('preloader').classList.add('hide');
     });
-  });
-});
- 
-/* Lightbox */
-const lightbox = document.getElementById('lightbox');
-const lbImg = document.getElementById('lbImg');
-const lbCap = document.getElementById('lbCap');
-let currentIndex = 0;
-let visibleItems = [];
-function refreshVisible(){ visibleItems = Array.from(gItems).filter(i=>i.style.display!=='none'); }
-function showLB(i){
-  refreshVisible();
-  if(!visibleItems.length) return;
-  currentIndex = (i+visibleItems.length)%visibleItems.length;
-  const item = visibleItems[currentIndex];
-  lbImg.src = item.dataset.full;
-  lbCap.textContent = item.dataset.cap;
-  lightbox.classList.add('open');
-}
-gItems.forEach((item)=>{
-  item.addEventListener('click', ()=>{
-    refreshVisible();
-    const idx = visibleItems.indexOf(item);
-    showLB(idx);
-  });
-});
-document.getElementById('lbClose').addEventListener('click', ()=> lightbox.classList.remove('open'));
-document.getElementById('lbNext').addEventListener('click', ()=> showLB(currentIndex+1));
-document.getElementById('lbPrev').addEventListener('click', ()=> showLB(currentIndex-1));
-lightbox.addEventListener('click', (e)=>{ if(e.target===lightbox) lightbox.classList.remove('open'); });
-document.addEventListener('keydown', (e)=>{
-  if(!lightbox.classList.contains('open')) return;
-  if(e.key==='Escape') lightbox.classList.remove('open');
-  if(e.key==='ArrowRight') showLB(currentIndex+1);
-  if(e.key==='ArrowLeft') showLB(currentIndex-1);
-});
- 
-/* Counters + rings on scroll */
-const counterSection = document.querySelector('.counter-strip');
-let countersRun = false;
-function animateCounters(){
-  if(countersRun) return; countersRun = true;
-  document.querySelectorAll('.counter-ring .fg').forEach(circle=>{
-    const target = +circle.dataset.target;
-    const r = circle.r.baseVal.value;
-    const circumference = 2*Math.PI*r;
-    circle.style.strokeDasharray = circumference;
-    circle.style.strokeDashoffset = circumference;
-    const maxVal = Math.max(target, 60); // scale ring relative to biggest stat for visual consistency
-    const offset = circumference - (target/maxVal)*circumference;
-    requestAnimationFrame(()=>{ circle.style.strokeDashoffset = offset; });
-  });
-  document.querySelectorAll('.num[data-count]').forEach(numEl=>{
-    const target = +numEl.dataset.count;
-    let cur = 0;
-    const step = Math.max(1, Math.ceil(target/60));
-    const iv = setInterval(()=>{
-      cur += step;
-      if(cur>=target){ cur=target; clearInterval(iv); }
-      numEl.textContent = cur;
-    }, 22);
-  });
-}
-if('IntersectionObserver' in window && counterSection){
-  const io = new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{ if(e.isIntersecting) animateCounters(); });
-  }, {threshold:.4});
-  io.observe(counterSection);
-}
- 
-/* Sticky navbar: shrink shadow + hide on scroll down, show on scroll up */
-const navbar = document.querySelector('.navbar-proxys');
-let lastScroll = 0;
-const delta = 5;
-window.addEventListener('scroll', ()=>{
-  const st = window.scrollY || window.pageYOffset;
-  // shadow
-  navbar.style.boxShadow = st>10 ? '0 6px 24px rgba(0,0,0,.08)' : 'none';
-  // ignore tiny scrolls
-  if (Math.abs(st - lastScroll) <= delta) return;
-  if (st > lastScroll && st > 100) {
-    // scrolling down
-    navbar.classList.add('nav-hidden');
-  } else {
-    // scrolling up
-    navbar.classList.remove('nav-hidden');
-  }
-  lastScroll = st;
-});
-</script>
+    
+    /* AOS init */
+    AOS.init({ duration: 800, once: true, offset: 60 });
+    
+    /* Ambient particles in hero */
+    (function(){
+      const wrap = document.getElementById('particles');
+      for(let i=0;i<24;i++){
+        const d = document.createElement('div');
+        d.className='dot';
+        d.style.left = Math.random()*100+'%';
+        d.style.top = Math.random()*100+'%';
+        d.style.animationDelay = (Math.random()*9)+'s';
+        d.style.animationDuration = (7+Math.random()*6)+'s';
+        wrap.appendChild(d);
+      }
+    })();
+    
+    /* Mobile off-canvas menu */
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mmOverlay = document.getElementById('mmOverlay');
+    const mmClose = document.getElementById('mmClose');
+    function openMM(){ mobileMenu.classList.add('open'); mmOverlay.classList.add('open'); }
+    function closeMM(){ mobileMenu.classList.remove('open'); mmOverlay.classList.remove('open'); }
+    burgerBtn.addEventListener('click', openMM);
+    mmClose.addEventListener('click', closeMM);
+    mmOverlay.addEventListener('click', closeMM);
+    
+    /* Enquiry modal */
+    const enqModal = document.getElementById('enqModal');
+    document.getElementById('openEnquiry').addEventListener('click', ()=> enqModal.classList.add('open'));
+    document.getElementById('mobileEnquiry').addEventListener('click', (e)=>{ e.preventDefault(); enqModal.classList.add('open'); });
+    document.getElementById('enqClose').addEventListener('click', ()=> enqModal.classList.remove('open'));
+    enqModal.addEventListener('click', (e)=>{ if(e.target===enqModal) enqModal.classList.remove('open'); });
+    
+    /* FAQ accordion */
+    document.querySelectorAll('.faq-q').forEach(q=>{
+      q.addEventListener('click', ()=>{
+        const item = q.parentElement;
+        const wasOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+        if(!wasOpen) item.classList.add('open');
+      });
+    });
+    
+    /* Gallery filter */
+    const gItems = document.querySelectorAll('.g-item');
+    document.querySelectorAll('.gfilter').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        document.querySelectorAll('.gfilter').forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        gItems.forEach(item=>{
+          item.style.display = (f==='all' || item.dataset.cat===f) ? '' : 'none';
+        });
+      });
+    });
+    
+    /* Lightbox */
+    const lightbox = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lbImg');
+    const lbCap = document.getElementById('lbCap');
+    let currentIndex = 0;
+    let visibleItems = [];
+    function refreshVisible(){ visibleItems = Array.from(gItems).filter(i=>i.style.display!=='none'); }
+    function showLB(i){
+      refreshVisible();
+      if(!visibleItems.length) return;
+      currentIndex = (i+visibleItems.length)%visibleItems.length;
+      const item = visibleItems[currentIndex];
+      lbImg.src = item.dataset.full;
+      lbCap.textContent = item.dataset.cap;
+      lightbox.classList.add('open');
+    }
+    gItems.forEach((item)=>{
+      item.addEventListener('click', ()=>{
+        refreshVisible();
+        const idx = visibleItems.indexOf(item);
+        showLB(idx);
+      });
+    });
+    document.getElementById('lbClose').addEventListener('click', ()=> lightbox.classList.remove('open'));
+    document.getElementById('lbNext').addEventListener('click', ()=> showLB(currentIndex+1));
+    document.getElementById('lbPrev').addEventListener('click', ()=> showLB(currentIndex-1));
+    lightbox.addEventListener('click', (e)=>{ if(e.target===lightbox) lightbox.classList.remove('open'); });
+    document.addEventListener('keydown', (e)=>{
+      if(!lightbox.classList.contains('open')) return;
+      if(e.key==='Escape') lightbox.classList.remove('open');
+      if(e.key==='ArrowRight') showLB(currentIndex+1);
+      if(e.key==='ArrowLeft') showLB(currentIndex-1);
+    });
+    
+    /* Counters + rings on scroll */
+    const counterSection = document.querySelector('.counter-strip');
+    let countersRun = false;
+    function animateCounters(){
+      if(countersRun) return; countersRun = true;
+      document.querySelectorAll('.counter-ring .fg').forEach(circle=>{
+        const target = +circle.dataset.target;
+        const r = circle.r.baseVal.value;
+        const circumference = 2*Math.PI*r;
+        circle.style.strokeDasharray = circumference;
+        circle.style.strokeDashoffset = circumference;
+        const maxVal = Math.max(target, 60);
+        const offset = circumference - (target/maxVal)*circumference;
+        requestAnimationFrame(()=>{ circle.style.strokeDashoffset = offset; });
+      });
+      document.querySelectorAll('.num[data-count]').forEach(numEl=>{
+        const target = +numEl.dataset.count;
+        let cur = 0;
+        const step = Math.max(1, Math.ceil(target/60));
+        const iv = setInterval(()=>{
+          cur += step;
+          if(cur>=target){ cur=target; clearInterval(iv); }
+          numEl.textContent = cur;
+        }, 22);
+      });
+    }
+    if('IntersectionObserver' in window && counterSection){
+      const io = new IntersectionObserver((entries)=>{
+        entries.forEach(e=>{ if(e.isIntersecting) animateCounters(); });
+      }, {threshold:.4});
+      io.observe(counterSection);
+    }
+    
+    /* Sticky navbar: shrink shadow + hide on scroll down, show on scroll up */
+    const navbar = document.querySelector('.navbar-proxys');
+    let lastScroll = 0;
+    const delta = 5;
+    window.addEventListener('scroll', ()=>{
+      const st = window.scrollY || window.pageYOffset;
+      navbar.style.boxShadow = st>10 ? '0 6px 24px rgba(0,0,0,.08)' : 'none';
+      if (Math.abs(st - lastScroll) <= delta) return;
+      if (st > lastScroll && st > 100) {
+        navbar.classList.add('nav-hidden');
+      } else {
+        navbar.classList.remove('nav-hidden');
+      }
+      lastScroll = st;
+    });
+  </script>
 </body>
 </html>
- 
- 
-
-
